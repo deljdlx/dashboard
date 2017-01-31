@@ -78,6 +78,15 @@
             <div class="col-lg-8">
 
 
+
+            <elbiniou-panel>
+                <meta  data-attribute-name="title">Simple panel</meta>
+                <meta  data-attribute-name="icon">fa-hand-pointer-o </meta>
+                <meta  data-attribute-name="content">Panel content</meta>
+            </elbiniou-panel>
+
+
+
             <elbiniou-panel>
                 <meta  data-attribute-name="title"><![CDATA[
                     My Area Chart Example
