@@ -1,0 +1,13 @@
+{
+  "name": "khi",
+  "homepage": "https://github.com/ElBiniou/khi",
+  "_release": "ebb445d59c",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "ebb445d59ccc5b94ee068f9f7839b2bac085fa85"
+  },
+  "_source": "https://github.com/ElBiniou/khi.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/ElBiniou/khi.git"
+}
