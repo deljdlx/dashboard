@@ -1,0 +1,28 @@
+{
+	"name": "elbiniou-dashboard",
+	"description": "PHP component for dashboard build",
+	"repositories": [
+		{"type": "vcs", "url": "https://github.com/ElBiniou/phpcomponent"}
+
+	],
+	"require":
+	{
+		"elbiniou-phpcomponent": "dev-master"
+	},
+	"require-dev": {
+	},
+	"config": {
+		"process-timeout": 600
+	},
+	"autoload": {
+		"psr-4": {
+			"Elbiniou\\Dashboard\\": "source/class"
+		}
+	},
+	"scripts": {
+		"post-install-cmd": [
+		],
+		"post-update-cmd": [
+		]
+	}
+}

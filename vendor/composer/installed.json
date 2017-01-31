@@ -1,0 +1,35 @@
+[
+    {
+        "name": "elbiniou-phpcomponent",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ElBiniou/phpcomponent.git",
+            "reference": "4d3ff7a4b1a71bff00ef20374a75c88668d32ffb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ElBiniou/phpcomponent/zipball/4d3ff7a4b1a71bff00ef20374a75c88668d32ffb",
+            "reference": "4d3ff7a4b1a71bff00ef20374a75c88668d32ffb",
+            "shasum": ""
+        },
+        "time": "2017-01-31T14:17:45+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Mustache": "vendor/mustache/src"
+            },
+            "psr-4": {
+                "PHPComponent\\": "source/class"
+            },
+            "files": []
+        },
+        "description": "PHP web-components",
+        "support": {
+            "source": "https://github.com/ElBiniou/phpcomponent/tree/master",
+            "issues": "https://github.com/ElBiniou/phpcomponent/issues"
+        }
+    }
+]
