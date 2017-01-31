@@ -1,26 +1,26 @@
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content=""/>
+<meta name="author" content=""/>
 
 <title>Gutten Tag !</title>
 
 <!-- Bootstrap Core CSS -->
-<link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
 <!-- MetisMenu CSS -->
-<link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+<link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet"/>
 
 <!-- Custom CSS -->
-<link href="vendor/startbootstrap-sb-admin-2/dist/css/sb-admin-2.css" rel="stylesheet">
+<link href="vendor/startbootstrap-sb-admin-2/dist/css/sb-admin-2.css" rel="stylesheet"/>
 
 <!-- Morris Charts CSS -->
-<link href="vendor/morrisjs/morris.css" rel="stylesheet">
+<link href="vendor/morrisjs/morris.css" rel="stylesheet"/>
 
 <!-- Custom Fonts -->
-<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
