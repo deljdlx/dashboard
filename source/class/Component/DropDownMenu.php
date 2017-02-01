@@ -18,14 +18,17 @@ class DropDownMenu extends \PHPComponent\Component
     {
 
 
+
+
+
         $template = '
             <div class="btn-group">
-            
+
                 <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                    Actions
+                    {{{title}}}
                     <span class="caret"></span>
                 </button>
-                
+
                 <ul class="dropdown-menu pull-right" role="menu">
                     <li><a href="#">Action</a></li>
                     <li><a href="#">Another action</a></li>
@@ -33,14 +36,12 @@ class DropDownMenu extends \PHPComponent\Component
                     <li class="divider"></li>
                     <li><a href="#">Separated link</a></li>
                 </ul>
-
-
-                
             </div>
         ';
 
 
-        return parent::render($template, $values);
+        $content=parent::render($template, $values);
+        return $content;
 
     }
 }

@@ -32,11 +32,6 @@ class Panel extends \PHPComponent\Component
         ';
 
 
-
-
-        //return $test->render(null, $values);
-
-
         return parent::render($template, $values);
 
     }

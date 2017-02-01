@@ -23,6 +23,11 @@
 
 
 
+    <?php
+        //require(__DIR__.'/fragment/menu.php');
+    ?>
+
+
 
     <div id="page-wrapper">
 

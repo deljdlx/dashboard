@@ -15,13 +15,16 @@
                 <form class="form-horizontal">
                     <fieldset>
                         <legend>Legend</legend>
+
                         <div class="form-group">
                             <label for="inputEmail" class="col-md-2 control-label">Email</label>
-
                             <div class="col-md-10">
                                 <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                             </div>
                         </div>
+
+
+
                         <div class="form-group">
                             <label for="inputPassword" class="col-md-2 control-label">Password</label>
 

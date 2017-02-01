@@ -1,3 +1,7 @@
+
+
+
+
 <hr/>
 <h2 class="page-header withripple">Date picker</h2>
 <div class="form-group label-floating">
@@ -10,9 +14,6 @@
 
 <hr/>
 <button class="customRipple" data-ripple-color="#FFF" style="padding: 8px;font-size: 22px; background-color: #89669b; border: none; color:#FFF">Button with custom ripple</button>
-
-<hr/>
-
 <div class="customRipple" style="padding: 8px;font-size: 22px; background-color: #444444; border: none; color:#FFF">div with custom ripple</div>
 <hr/>
 
@@ -71,7 +72,9 @@
         <div class="col-lg-3 col-md-6">
             <db-cardpanel>
                 <property name="color">red</property>
-                <property name="title">Hello</property>
+                <property name="title">Hello
+
+                </property>
                 <property name="subTitle">World</property>
                 <property name="icon">fa-cubes</property>
             </db-cardpanel>
@@ -84,6 +87,9 @@
     </div>
     <!-- /.row -->
     <div class="row">
+
+
+
         <div class="col-lg-8">
 
 
@@ -115,21 +121,9 @@
                 <div class="panel-heading">
                     <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
                     <div class="pull-right">
-
-
-
-
-
                         <db-dropdownmenu>
                             <property  name="title">DROPDOWNMENU</property>
                         </db-dropdownmenu>
-
-
-
-
-
-
-
                     </div>
                 </div>
                 <!-- /.panel-heading -->
@@ -333,10 +327,37 @@
 
 
             <db-panel>
-                <property name="title">Imbrication</property>
+                <property name="title">Imbrication                    <div class="pull-right">
+
+                        <db-dropdownmenu>
+                            <property  name="title">DROPDOWNMENU</property>
+                        </db-dropdownmenu>
+                    </div></property>
+
+
 
                 <property name="content">
 
+
+
+                    <db-cardpanel>
+                        <property name="color">primary</property>
+                        <property name="title">Hello</property>
+                        <property name="subTitle">
+                            <db-dropdownmenu>
+                                <property  name="title">DROPDOWNMENU</property>
+                            </db-dropdownmenu>
+                        </property>
+                        <property name="icon">fa-bomb</property>
+                    </db-cardpanel>
+
+
+                    <div class="pull-right">
+                        <db-dropdownmenu>
+                            <property  name="title">DROPDOWNMENU</property>
+                        </db-dropdownmenu>
+                    </div>
+
                     <db-cardpanel>
                         <property name="color">primary</property>
                         <property name="title">Hello</property>
@@ -346,19 +367,12 @@
 
 
 
-                    <db-cardpanel>
-                        <property name="color">primary</property>
-                        <property name="title">Hello</property>
-                        <property name="subTitle">CardPanel</property>
-                        <property name="icon">fa-bomb</property>
-                    </db-cardpanel>
+                    <div class="pull-right">
+                        <db-dropdownmenu>
+                            <property  name="title">DROPDOWNMENU</property>
+                        </db-dropdownmenu>
+                    </div>
 
-
-
-
-                    <db-dropdownmenu>
-                        <property  name="title">DROPDOWNMENU</property>
-                    </db-dropdownmenu>
                     <a href="#" class="btn btn-default btn-block">View All Alerts</a>
 
                 </property>
@@ -442,38 +456,10 @@
             <div class="chat-panel panel panel-default">
                 <div class="panel-heading">
                     <i class="fa fa-comments fa-fw"></i> Chat
-                    <div class="btn-group pull-right">
-                        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-chevron-down"></i>
-                        </button>
-                        <ul class="dropdown-menu slidedown">
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-refresh fa-fw"></i> Refresh
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-check-circle fa-fw"></i> Available
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-times fa-fw"></i> Busy
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-clock-o fa-fw"></i> Away
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-sign-out fa-fw"></i> Sign Out
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="pull-right">
+                        <db-dropdownmenu>
+                            <property  name="title">DROPDOWNMENU</property>
+                        </db-dropdownmenu>
                     </div>
                 </div>
                 <!-- /.panel-heading -->
