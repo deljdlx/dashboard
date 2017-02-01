@@ -2,6 +2,8 @@
 
 namespace Elbiniou\Dashboard\Component;
 
+use PHPComponent\Component;
+
 class Panel extends \PHPComponent\Component
 {
 
@@ -28,6 +30,11 @@ class Panel extends \PHPComponent\Component
                 <!-- /.panel-body -->
             </div>
         ';
+
+
+
+
+        //return $test->render(null, $values);
 
 
         return parent::render($template, $values);

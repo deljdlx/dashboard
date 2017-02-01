@@ -10,6 +10,9 @@
 <!-- Bootstrap Core CSS -->
 <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
+<link href="vendor/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+
+
 <!-- MetisMenu CSS -->
 <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet"/>
 
@@ -36,13 +39,4 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 
-<!-- Metis Menu Plugin JavaScript -->
-<script src="vendor/metisMenu/metisMenu.min.js"></script>
 
-<!-- Morris Charts JavaScript -->
-<script src="vendor/raphael/raphael.min.js"></script>
-<script src="vendor/morrisjs/morris.min.js"></script>
-<script src="vendor/startbootstrap-sb-admin-2/data/morris-data.js"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="vendor/startbootstrap-sb-admin-2/dist/js/sb-admin-2.js"></script>

@@ -2,7 +2,7 @@
 
 
 ob_start();
-include(__DIR__.'/template/default.php');
+include(__DIR__.'/template/test2/index.php');
 $template=ob_get_clean();
 
 
@@ -10,27 +10,15 @@ $template=ob_get_clean();
 $test=new \PHPComponent\Template($template);
 
 
+$test->registerComponent('db-cardpanel', '\Elbiniou\Dashboard\Component\CardPanel');
+$test->registerComponent('db-panel', '\Elbiniou\Dashboard\Component\Panel');
+$test->registerComponent('db-dropdownmenu', '\Elbiniou\Dashboard\Component\DropDownMenu');
 
-$test->registerCustomTag('elbiniou-cardpanel', function($content, $node) {
-    $component=new \Elbiniou\Dashboard\Component\CardPanel();
-    $component->loadFromDOMNode($node);
-    return $component->render();
-});
-
-
-$test->registerCustomTag('elbiniou-panel', function($content, $node) {
-    $component=new \Elbiniou\Dashboard\Component\Panel();
-    $component->loadFromDOMNode($node);
-    return $component->render();
-});
+$test->registerComponent('db-button', '\Elbiniou\Dashboard\Component\Button');
 
 
 
-//$test->setVariable('content', '::Variable mustache "content"::');
-/*
-$test->registerCustomTag('phi-component', function() {
-    return '{{{Contenu texte}}}';
-});
-*/
+//<a href="javascript:void(0)" class="btn btn-raised active"><code>.active</code></a>
+
 echo $test->render();
 echo '<hr/>';
