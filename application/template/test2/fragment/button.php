@@ -12,7 +12,6 @@
     <div class="row">
         <div class="col-md-6">
 
-
             <h3>Raised buttons <small><code>.btn-raised</code></small></h3>
             <p class="bs-component">
                 <db-button caption="default"></db-button>
