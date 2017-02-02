@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ElBiniou/phpcomponent.git",
-                "reference": "2ebbf2ccf37cdb57518c4ee7b438ff77da010736"
+                "reference": "859a5f42ee2095d8b1e3a08557a6314287691eae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ElBiniou/phpcomponent/zipball/2ebbf2ccf37cdb57518c4ee7b438ff77da010736",
-                "reference": "2ebbf2ccf37cdb57518c4ee7b438ff77da010736",
+                "url": "https://api.github.com/repos/ElBiniou/phpcomponent/zipball/859a5f42ee2095d8b1e3a08557a6314287691eae",
+                "reference": "859a5f42ee2095d8b1e3a08557a6314287691eae",
                 "shasum": ""
             },
             "type": "library",
@@ -35,7 +35,7 @@
                 "source": "https://github.com/ElBiniou/phpcomponent/tree/master",
                 "issues": "https://github.com/ElBiniou/phpcomponent/issues"
             },
-            "time": "2017-02-01 16:59:57"
+            "time": "2017-02-02 17:53:40"
         }
     ],
     "packages-dev": [],

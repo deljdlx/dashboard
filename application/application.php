@@ -16,6 +16,9 @@ $test->registerComponent('db-dropdownmenu', '\Elbiniou\Dashboard\Component\DropD
 
 $test->registerComponent('db-button', '\Elbiniou\Dashboard\Component\Button');
 
+$test->registerComponent('db-list', '\Elbiniou\Dashboard\Component\ItemList');
+$test->registerComponent('db-barchart', '\Elbiniou\Dashboard\Component\BarChart');
+
 
 
 //<a href="javascript:void(0)" class="btn btn-raised active"><code>.active</code></a>

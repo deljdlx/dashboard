@@ -122,7 +122,15 @@
                     <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
                     <div class="pull-right">
                         <db-dropdownmenu>
-                            <property  name="title">DROPDOWNMENU</property>
+                            <property  name="title">Menu</property>
+                            <property  name="items" type="json">
+                                [
+                                    {"caption": "Test1", "url": "#"},
+                                    {"caption": "Test2", "url": "#"},
+                                    {"caption": "Test3", "url": "#"}
+                                ]
+                            </property>
+
                         </db-dropdownmenu>
                     </div>
                 </div>
@@ -196,7 +204,18 @@
                         </div>
                         <!-- /.col-lg-4 (nested) -->
                         <div class="col-lg-8">
-                            <div id="bar-chart" style="height: 500px;"></div>
+                            <db-barchart>
+                                <property name="title">Exemple bar chart</property>
+                                <property name="serie" type="json">
+                                    {
+                                        "name": "Yolo",
+                                        "captions": ["Test1","Test2","Test3","Test4","Test5","Test6"],
+                                        "values" : [5, 20, 36, 10, 10, 20]
+                                    }
+
+                                </property>
+                            </db-barchart>
+                            <!--<div id="bar-chart" style="height: 500px;"></div>//-->
                         </div>
                         <!-- /.col-lg-8 (nested) -->
                     </div>
@@ -385,53 +404,22 @@
             <db-panel>
                 <property name="title">Hello</property>
                 <property name="content">
-                    <div class="list-group">
-                        <a href="#" class="list-group-item">
-                            <i class="fa fa-comment fa-fw"></i> New Comment
-                            <span class="pull-right text-muted small"><em>4 minutes ago</em>
-                                </span>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                            <span class="pull-right text-muted small"><em>12 minutes ago</em>
-                                </span>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="fa fa-envelope fa-fw"></i> Message Sent
-                            <span class="pull-right text-muted small"><em>27 minutes ago</em>
-                                </span>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="fa fa-tasks fa-fw"></i> New Task
-                            <span class="pull-right text-muted small"><em>43 minutes ago</em>
-                                </span>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                            <span class="pull-right text-muted small"><em>11:32 AM</em>
-                                </span>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="fa fa-bolt fa-fw"></i> Server Crashed!
-                            <span class="pull-right text-muted small"><em>11:13 AM</em>
-                                </span>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="fa fa-warning fa-fw"></i> Server Not Responding
-                            <span class="pull-right text-muted small"><em>10:57 AM</em>
-                                </span>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="fa fa-shopping-cart fa-fw"></i> New Order Placed
-                            <span class="pull-right text-muted small"><em>9:49 AM</em>
-                                </span>
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <i class="fa fa-money fa-fw"></i> Payment Received
-                            <span class="pull-right text-muted small"><em>Yesterday</em>
-                                </span>
-                        </a>
-                    </div>
+
+                    <db-list>
+                        <property name="items" type="json">
+                            [
+                                {"icon" : "fa-fw", "caption" : "3 New Followers", "legend" : "12 minutes ago"},
+                                {"icon" : "fa-fw", "caption" : "3 New Followers", "legend" : "12 minutes ago"},
+                                {"icon" : "fa-fw", "caption" : "3 New Followers", "legend" : "12 minutes ago"},
+                                {"icon" : "fa-fw", "caption" : "3 New Followers", "legend" : "12 minutes ago"},
+                                {"icon" : "fa-fw", "caption" : "3 New Followers", "legend" : "12 minutes ago"}
+                            ]
+                        </property>
+
+                    </db-list>
+
+
+
                 </property>
 
             </db-panel>
@@ -582,26 +570,7 @@
 
     <script type="text/javascript">
         // based on prepared DOM, initialize echarts instance
-        var myChart = echarts.init(document.getElementById('bar-chart'));
-        // specify chart configuration item and data
-        var option = {
-            title: {
-                text: 'ECharts entry example'
-            },
-            tooltip: {},
-            legend: {
-                data:['Sales']
-            },
-            xAxis: {
-                data: ["shirt","cardign","chiffon shirt","pants","heels","socks"]
-            },
-            yAxis: {},
-            series: [{
-                name: 'Sales',
-                type: 'bar',
-                data: [5, 20, 36, 10, 10, 20]
-            }]
-        };
+
         // use configuration item and data specified to show chart
         myChart.setOption(option);
 
