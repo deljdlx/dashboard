@@ -97,7 +97,19 @@
             <db-panel>
                 <property name="title">Simple panel</property>
                 <property name="icon">fa-hand-pointer-o </property>
-                <property name="content">Panel content</property>
+                <property name="content">
+                    Panel content
+                    <db-barchart>
+                        <property name="title">Exemple bar chart</property>
+                        <property name="serie" type="json">
+                            {
+                            "name": "Yolo",
+                            "captions": ["Test1","Test2","Test3","Test4","Test5","Test6"],
+                            "values" : [5, 20, 36, 10, 10, 20]
+                            }
+                        </property>
+                    </db-barchart>
+                </property>
             </db-panel>
 
 
@@ -569,11 +581,6 @@
 
 
     <script type="text/javascript">
-        // based on prepared DOM, initialize echarts instance
-
-        // use configuration item and data specified to show chart
-        myChart.setOption(option);
-
 
 
         var myChart = echarts.init(document.getElementById('donut-chart'));

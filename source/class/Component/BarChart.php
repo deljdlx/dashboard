@@ -48,26 +48,29 @@ class BarChart extends \PHPComponent\Component
         $template = '
             <div id="{{{id}}}" style="height: {{{height}}};"></div>
             <script>
-            var myChart = echarts.init(document.getElementById("{{{id}}}"));
-            // specify chart configuration item and data
-            var option = {
-                title: {
-                    text: "{{{title}}}"
-                },
-                tooltip: {},
-                legend: {
-                    data:['.json_encode($values['name']).']
-                },
-                xAxis: {
-                    data: '.json_encode($values['captions']).'
-                },
-                yAxis: {},
-                series: [{
-                    name: '.json_encode($values['name']).',
-                    type: "bar",
-                    data: [5, 20, 36, 10, 10, 20]
-                }]
-            };
+            (function() {
+                var myChart = echarts.init(document.getElementById("{{{id}}}"));
+                // specify chart configuration item and data
+                var option = {
+                    title: {
+                        text: "{{{title}}}"
+                    },
+                    tooltip: {},
+                    legend: {
+                        data:['.json_encode($values['name']).']
+                    },
+                    xAxis: {
+                        data: '.json_encode($values['captions']).'
+                    },
+                    yAxis: {},
+                    series: [{
+                        name: '.json_encode($values['name']).',
+                        type: "bar",
+                        data: [5, 20, 36, 10, 10, 20]
+                    }]
+                }
+                myChart.setOption(option);
+            })();
             </script>
         ';
 
