@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+    "hash": "e15ce992950428142ee55b4e7a3b124f",
     "content-hash": "b811cff1d47ea826f9efede2aa8348fa",
     "packages": [
         {
@@ -12,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ElBiniou/phpcomponent.git",
-                "reference": "859a5f42ee2095d8b1e3a08557a6314287691eae"
+                "reference": "777d87ff0114a643f098e9a919443f5998c4555d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ElBiniou/phpcomponent/zipball/859a5f42ee2095d8b1e3a08557a6314287691eae",
-                "reference": "859a5f42ee2095d8b1e3a08557a6314287691eae",
+                "url": "https://api.github.com/repos/ElBiniou/phpcomponent/zipball/777d87ff0114a643f098e9a919443f5998c4555d",
+                "reference": "777d87ff0114a643f098e9a919443f5998c4555d",
                 "shasum": ""
             },
             "type": "library",
@@ -35,7 +36,7 @@
                 "source": "https://github.com/ElBiniou/phpcomponent/tree/master",
                 "issues": "https://github.com/ElBiniou/phpcomponent/issues"
             },
-            "time": "2017-02-02 17:53:40"
+            "time": "2017-02-05 18:52:29"
         }
     ],
     "packages-dev": [],

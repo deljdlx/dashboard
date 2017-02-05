@@ -13,7 +13,7 @@
 
 
 <hr/>
-<button class="customRipple" data-ripple-color="#FFF" style="padding: 8px;font-size: 22px; background-color: #89669b; border: none; color:#FFF">Button with custom ripple</button>
+<button class="customRipple" data-ripple-color="#FFF" style="padding: 8px;font-size: 22px; background-color: #89669b; border: none; color:#FFF">ça marche</button>
 <div class="customRipple" style="padding: 8px;font-size: 22px; background-color: #444444; border: none; color:#FFF">div with custom ripple</div>
 <hr/>
 
@@ -41,44 +41,59 @@
 
     <div class="row">
 
-        <div class="col-lg-3 col-md-6">
-            <db-cardpanel>
-                <property name="color">primary</property>
-                <property name="title">Hello</property>
-                <property name="subTitle">CardPanel</property>
-                <property name="icon">fa-bomb</property>
-            </db-cardpanel>
-        </div>
 
 
-        <div class="col-lg-3 col-md-6">
-            <db-cardpanel>
-                <property name="title">John</property>
-                <property name="subTitle">Doe</property>
-            </db-cardpanel>
-        </div>
+
+        <db-panel>
+            <property name="title">Liste card panel (ça marche ?)</property>
+            <property name="icon">fa-hand-pointer-o </property>
+            <property name="content">
 
 
-        <div class="col-lg-3 col-md-6">
-            <db-cardpanel>
-                <property name="color">yellow</property>
-                <property name="title">Hello</property>
-                <property name="subTitle">World</property>
-                <property name="icon">fa-shopping-cart</property>
-            </db-cardpanel>
-        </div>
+                <div class="col-lg-3 col-md-6">
+                    <db-cardpanel>
+                        <property name="color">primary</property>
+                        <property name="title">Hélo</property>
+                        <property name="subTitle">€ ici ça marche héhéhé</property>
+                        <property name="icon">fa-bomb</property>
+                    </db-cardpanel>
+                </div>
 
 
-        <div class="col-lg-3 col-md-6">
-            <db-cardpanel>
-                <property name="color">red</property>
-                <property name="title">Hello
+                <div class="col-lg-3 col-md-6">
+                    <db-cardpanel>
+                        <property name="title">John</property>
+                        <property name="subTitle">Doe</property>
+                    </db-cardpanel>
+                </div>
 
-                </property>
-                <property name="subTitle">World</property>
-                <property name="icon">fa-cubes</property>
-            </db-cardpanel>
-        </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <db-cardpanel>
+                        <property name="color">yellow</property>
+                        <property name="title">Hello</property>
+                        <property name="subTitle">World</property>
+                        <property name="icon">fa-shopping-cart</property>
+                    </db-cardpanel>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+                    <db-cardpanel>
+                        <property name="color">red</property>
+                        <property name="title">Hello
+
+                        </property>
+                        <property name="subTitle">World</property>
+                        <property name="icon">fa-cubes</property>
+                    </db-cardpanel>
+                </div>
+
+
+
+            </property>
+        </db-panel>
+
 
 
 

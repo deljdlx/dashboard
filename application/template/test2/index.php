@@ -30,6 +30,8 @@
 
 
     <div id="page-wrapper">
+        <?php require(__DIR__.'/fragment/circleProgress.php'); ?>
+
 
             <?php require(__DIR__.'/fragment/component.php'); ?>
 

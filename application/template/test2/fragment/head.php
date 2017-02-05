@@ -90,22 +90,7 @@
 
 
 
-<script src="vendor/babelcore.js"></script>
-<script src="vendor/react/build/react.js"></script>
-<script src="vendor/react/build/react-dom.js"></script>
-
-
-
-
-
-
-<script>
-
-
-
-
-
-</script>
+<script src="https://rawgit.com/kottenator/jquery-circle-progress/1.1.3/dist/circle-progress.js"></script>
 
 
 
