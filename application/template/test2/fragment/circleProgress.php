@@ -1,8 +1,3 @@
-<style id="jsbin-css">
-
-</style>
-
-
 <db-panel>
     <property name="title">
         Circle progress test
@@ -30,31 +25,8 @@
                 <property name="image">juniac.jpg</property>
             </db-circlegauge>
         </div>
-
-
     </property>
 </db-panel>
 
 
 
-
-
-<script>
-
-    $('.circleGraph').each(function(index, element) {
-
-
-        $(element).find('.circle').circleProgress({
-            size: 210,
-            thickness: 20,
-            value: element.getAttribute('data-value'),
-            startAngle: Math.PI/-2+1.6,
-            reverse: true,
-            fill: {
-                gradient: ["green", "orange"]
-            }
-        });
-    });
-
-
-</script>

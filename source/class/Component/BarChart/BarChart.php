@@ -9,7 +9,6 @@ class BarChart extends \PHPComponent\Component
 
     protected $variableCollection = array(
         'height' => '500px',
-        'id'=>null,
         "title"=>'Bar chart',
         "serie"=>array (
             'name' => 'Exemple',
@@ -38,22 +37,19 @@ class BarChart extends \PHPComponent\Component
     public function render($template = null, $values = null)
     {
 
-        if(!$this->getVariable('id')) {
-            $this->setVariable('id', 'bar-chart-'.uniqid());
-        }
 
         $values=$this->getVariable('serie');
 
 
-        $template = '
-            <div id="{{{id}}}" style="height: {{{height}}};"></div>
-            <script>
+        $template = '<div id="{{{elementID}}}" style="height: {{{height}}};"></div>';
+
+        $this->addJavascript('
             (function() {
-                var myChart = echarts.init(document.getElementById("{{{id}}}"));
+                var myChart = echarts.init(document.getElementById(\''.$this->getVariable('elementID').'\'));
                 // specify chart configuration item and data
                 var option = {
                     title: {
-                        text: "{{{title}}}"
+                        text: "'.$this->getVariable('title').'"
                     },
                     tooltip: {},
                     legend: {
@@ -72,7 +68,7 @@ class BarChart extends \PHPComponent\Component
                 myChart.setOption(option);
             })();
             </script>
-        ';
+        ');
 
 
         $content = parent::render($template, $values);

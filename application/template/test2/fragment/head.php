@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>SB Admin 2 - Bootstrap Admin Theme</title>
+<title>Elbiniou-dashboard</title>
 
 
 
@@ -23,9 +23,6 @@
 <!-- Bootstrap Core -->
 
 <link href="./vendor/bootstrap-pack/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
-
 <script src="./vendor/bootstrap-pack/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
@@ -75,12 +72,6 @@
 
 
 
-<!--date picker//-->
-<link id="bsdp-css" href="vendor/bootstrap-pack/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet">
-<script src="vendor/bootstrap-pack/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-<script src="vendor/bootstrap-pack/bootstrap-datepicker/locales/bootstrap-datepicker.fr.min.js" charset="UTF-8"></script>
-
-
 
 <!--social button//-->
 <link href="./vendor/bootstrap-pack/bootstrap-social/bootstrap-social.css" rel="stylesheet">
@@ -89,9 +80,9 @@
 
 
 
-
+<!--
 <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.1.3/dist/circle-progress.js"></script>
-
+//-->
 
 
 
@@ -115,24 +106,16 @@
 
 <script src="source/class/Workspace/LeftNavigationBar/LeftNavigationBar.js"></script>
 <script src="source/class/Workspace/TopNavigationBar/TopNavigationBar.js"></script>
-
-
-
 <link rel="stylesheet" href="vendor/jstree/dist/themes/default/style.min.css" />
 <script src="vendor/jstree/dist/jstree.min.js"></script>
-
-
-
 <link rel="stylesheet" href="source/class/Component/Ripple/ripple.css"/>
 <script src="source/class/Component/Ripple/Ripple.Js"></script>
-
 <link rel="stylesheet" href="source/class/Component/Tree/css/jstree-fontawesome.css"/>
 <script src="source/class/Component/Tree/Tree.js"></script>
-
-
-
-
 <script src="vendor/echarts.min.js"></script>
+
+
+
 
 
 

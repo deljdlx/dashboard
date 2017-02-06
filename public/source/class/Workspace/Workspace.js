@@ -159,13 +159,9 @@ Bienvenue.Workspace.prototype.initializeSliders=function() {
 
 
 Bienvenue.Workspace.prototype.initializeDatePicker=function() {
-	$('.bienvenue-datePicker').datepicker({
-		language: "fr",
-		daysOfWeekHighlighted: "0,6",
-		calendarWeeks: true,
-		autoclose: true,
-		todayHighlight: true
-	});
+	/*
+
+	*/
 }
 
 Bienvenue.Workspace.prototype.initializeRipple=function() {

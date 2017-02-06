@@ -1,8 +1,3 @@
-
-<h3 class="text-center">The Buttons</h3>
-
-
-
 <a class="btn btn-block btn-social btn-adn" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-adn']);">
 	<span class="fa fa-adn"></span> Sign in with App.net
 </a>

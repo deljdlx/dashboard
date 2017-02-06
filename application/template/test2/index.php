@@ -24,7 +24,7 @@
 
 
     <?php
-        //require(__DIR__.'/fragment/menu.php');
+        require(__DIR__.'/fragment/menu.php');
     ?>
 
 
@@ -44,7 +44,7 @@
 
             <?php include(__DIR__.'/fragment/button.php'); ?>
 
-            <?php include(__DIR__.'/fragment/social-button.php'); ?>
+
 
             <?php require(__DIR__.'/fragment/navbar.php'); ?>
             <?php require(__DIR__.'/fragment/dialog.php'); ?>
@@ -52,6 +52,7 @@
             <?php require(__DIR__.'/fragment/typo.php'); ?>
 
             <?php require(__DIR__.'/fragment/form.php'); ?>
+
 
 
     </div>

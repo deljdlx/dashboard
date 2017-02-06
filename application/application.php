@@ -9,7 +9,7 @@ $template=ob_get_clean();
 
 
 
-$test=new \PHPComponent\Template($template);
+$test=new \PHPComponent\Page($template);
 
 
 $test->registerComponent('db-cardpanel', '\Elbiniou\Dashboard\Component\CardPanel');
@@ -19,10 +19,23 @@ $test->registerComponent('db-dropdownmenu', '\Elbiniou\Dashboard\Component\DropD
 $test->registerComponent('db-button', '\Elbiniou\Dashboard\Component\Button');
 
 $test->registerComponent('db-list', '\Elbiniou\Dashboard\Component\ItemList');
+
+
 $test->registerComponent('db-barchart', '\Elbiniou\Dashboard\Component\BarChart');
+$test->registerComponent('db-donutchart', '\Elbiniou\Dashboard\Component\DonutChart');
 
 
 $test->registerComponent('db-circlegauge', '\Elbiniou\Dashboard\Component\CircleGauge');
+
+
+
+$test->registerComponent('db-dialog', '\Elbiniou\Dashboard\Component\Dialog');
+
+
+$test->registerComponent('db-datepicker', '\Elbiniou\Dashboard\Component\DatePicker');
+
+
+$test->registerComponent('db-richeditor', '\Elbiniou\Dashboard\Component\RichEditor');
 
 
 

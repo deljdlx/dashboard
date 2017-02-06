@@ -1,25 +1,20 @@
 
 
 
+<div class="row">
+    <db-panel>
+        <property name="title">Summer note exemple</property>
+        <property name="icon">fa-hand-pointer-o </property>
+        <property name="content">
 
-<hr/>
-<h2 class="page-header withripple">Date picker</h2>
-<div class="form-group label-floating">
-    <label class="control-label">Date picker</label>
-    <input class="form-control bienvenue-datePicker">
-    <p class="help-block">You should really write something here</p>
+
+            <db-richeditor></db-richeditor>
+
+
+
+        </property>
+    </db-panel>
 </div>
-<hr/>
-
-
-<hr/>
-<button class="customRipple" data-ripple-color="#FFF" style="padding: 8px;font-size: 22px; background-color: #89669b; border: none; color:#FFF">ça marche</button>
-<div class="customRipple" style="padding: 8px;font-size: 22px; background-color: #444444; border: none; color:#FFF">div with custom ripple</div>
-<hr/>
-
-
-
-
 
 
 
@@ -31,12 +26,19 @@
 
 
 <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">Dashboard</h1>
-        </div>
-        <!-- /.col-lg-12 -->
-    </div>
-    <!-- /.row -->
+    <db-panel>
+        <property name="title">Some ripple effetcs</property>
+        <property name="icon">fa-hand-pointer-o </property>
+        <property name="content">
+            <button class="customRipple" data-ripple-color="#FFF" style="padding: 8px;font-size: 22px; background-color: #89669b; border: none; color:#FFF">ça marche</button>
+            <div class="customRipple" style="padding: 8px;font-size: 22px; background-color: #444444; border: none; color:#FFF">div with custom ripple</div>
+        </property>
+    </db-panel>
+</div>
+
+
+
+
 
 
     <div class="row">
@@ -371,20 +373,27 @@
 
 
 
+            <db-panel>
+                <property name="title">Date picker</property>
+                <property name="content">
+                    <db-datepicker></db-datepicker>
+                </property>
+            </db-panel>
+
+
 
             <db-panel>
-                <property name="title">Imbrication                    <div class="pull-right">
-
+                <property name="title">Imbrication
+                    <div class="pull-right">
                         <db-dropdownmenu>
                             <property  name="title">DROPDOWNMENU</property>
                         </db-dropdownmenu>
-                    </div></property>
+                    </div>
+                </property>
 
 
 
                 <property name="content">
-
-
 
                     <db-cardpanel>
                         <property name="color">primary</property>
@@ -429,9 +438,8 @@
 
 
             <db-panel>
-                <property name="title">Hello</property>
+                <property name="title">Exemple list box</property>
                 <property name="content">
-
                     <db-list>
                         <property name="items" type="json">
                             [
@@ -442,120 +450,37 @@
                                 {"icon" : "fa-fw", "caption" : "3 New Followers", "legend" : "12 minutes ago"}
                             ]
                         </property>
-
                     </db-list>
-
-
-
                 </property>
-
             </db-panel>
-
 
 
 
 
             <db-panel>
-                <property name="title">Donut Chart Example</property>
-                <property name="icon">fa-bolt </property>
+                <property name="title">Donut Chart Component</property>
                 <property name="content">
-                    <div id="donut-chart" style="height: 500px"></div>
-                    <a href="#" class="btn btn-default btn-block">View Details</a>
+                    <db-donutchart></db-donutchart>
                 </property>
             </db-panel>
 
 
 
 
-            <!-- /.panel -->
-            <div class="chat-panel panel panel-default">
-                <div class="panel-heading">
-                    <i class="fa fa-comments fa-fw"></i> Chat
-                    <div class="pull-right">
-                        <db-dropdownmenu>
-                            <property  name="title">DROPDOWNMENU</property>
-                        </db-dropdownmenu>
-                    </div>
-                </div>
-                <!-- /.panel-heading -->
-                <div class="panel-body">
-                    <ul class="chat">
-                        <li class="left clearfix">
-                                    <span class="chat-img pull-left">
-                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                            <div class="chat-body clearfix">
-                                <div class="header">
-                                    <strong class="primary-font">Jack Sparrow</strong>
-                                    <small class="pull-right text-muted">
-                                        <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
-                                    </small>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="right clearfix">
-                                    <span class="chat-img pull-right">
-                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                            <div class="chat-body clearfix">
-                                <div class="header">
-                                    <small class=" text-muted">
-                                        <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
-                                    <strong class="pull-right primary-font">Bhaumik Patel</strong>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="left clearfix">
-                                    <span class="chat-img pull-left">
-                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                            <div class="chat-body clearfix">
-                                <div class="header">
-                                    <strong class="primary-font">Jack Sparrow</strong>
-                                    <small class="pull-right text-muted">
-                                        <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="right clearfix">
-                                    <span class="chat-img pull-right">
-                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                            <div class="chat-body clearfix">
-                                <div class="header">
-                                    <small class=" text-muted">
-                                        <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
-                                    <strong class="pull-right primary-font">Bhaumik Patel</strong>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.panel-body -->
-                <div class="panel-footer">
-                    <div class="input-group">
-                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
-                        <span class="input-group-btn">
-                                    <button class="btn btn-warning btn-sm" id="btn-chat">
-                                        Send
-                                    </button>
-                                </span>
-                    </div>
-                </div>
-                <!-- /.panel-footer -->
-            </div>
+
+            <?php include(__DIR__.'/chat.php'); ?>
+
+
+            <db-panel>
+                <property name="title">Social buttons</property>
+                <property name="content">
+                    <?php include(__DIR__.'/social-button.php'); ?>
+                </property>
+            </db-panel>
+
+
+
+
             <!-- /.panel .chat-panel -->
         </div>
         <!-- /.col-lg-4 -->
@@ -596,57 +521,6 @@
 
 
     <script type="text/javascript">
-
-
-        var myChart = echarts.init(document.getElementById('donut-chart'));
-        // specify chart configuration item and data
-        option = {
-            tooltip: {
-                trigger: 'item',
-                formatter: "{a} <br/>{b}: {c} ({d}%)"
-            },
-            legend: {
-                orient: 'vertical',
-                x: 'left',
-                data:['Test 1','Test 2','Test 3','Test 4','Test 5']
-            },
-            series: [
-                {
-                    name:'Série',
-                    type:'pie',
-                    radius: ['50%', '70%'],
-                    avoidLabelOverlap: false,
-                    label: {
-                        normal: {
-                            show: false,
-                            position: 'center'
-                        },
-                        emphasis: {
-                            show: true,
-                            textStyle: {
-                                fontSize: '30',
-                                fontWeight: 'bold'
-                            }
-                        }
-                    },
-                    labelLine: {
-                        normal: {
-                            show: false
-                        }
-                    },
-                    data:[
-                        {value:335, name:'Test 1'},
-                        {value:310, name:'Test 2'},
-                        {value:234, name:'Test 3'},
-                        {value:135, name:'Test 4'},
-                        {value:1548, name:'Test 5'}
-                    ]
-                }
-            ]
-        };
-        // use configuration item and data specified to show chart
-        myChart.setOption(option);
-
 
 
 
