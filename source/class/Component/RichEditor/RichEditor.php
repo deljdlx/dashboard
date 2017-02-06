@@ -26,13 +26,10 @@ class RichEditor extends \PHPComponent\Component
 
 
 
-        //<!-- include summernote css/js-->
-        //<link href="vendor/summernote/dist/summernote.css" rel="stylesheet"/>
-        //<script src="vendor/summernote/dist/summernote.js"></script>
+        //$this->addGlobalCSS(file_get_contents(__DIR__ . '/asset/summernote/dist/summernote.css'));
+        //$this->addGlobalJavascript(file_get_contents(__DIR__ . '/asset/summernote/dist/summernote.js'), 'core');
 
 
-        $this->addGlobalCSS(file_get_contents(__DIR__ . '/asset/summernote/dist/summernote.css'));
-        $this->addGlobalJavascript(file_get_contents(__DIR__ . '/asset/summernote/dist/summernote.js'), 'core');
 
         /*
         echo '<pre id="' . __FILE__ . '-' . __LINE__ . '" style="border: solid 1px rgb(255,0,0); background-color:rgb(255,255,255)">';

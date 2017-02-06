@@ -8,7 +8,20 @@
         <property name="content">
 
 
-            <db-richeditor></db-richeditor>
+            <db-richeditor>
+                <property name="content">
+
+
+                    <db-circlegauge>
+                        <property name="title">Hélo</property>
+                        <property name="content">€ ici ça marche héhéhé</property>
+                        <property name="value">0.75</property>
+                        <property name="image">tavares.jpg</property>
+                    </db-circlegauge>
+
+
+                </property>
+            </db-richeditor>
 
 
 

@@ -20,7 +20,7 @@ require.config({
   }]
 });
 
-require(['jquery', '../.'], function ($) {
+require(['jquery', '../'], function ($) {
   var requireByPromise = function (paths) {
     return $.Deferred(function (deferred) {
       require(paths, function () {

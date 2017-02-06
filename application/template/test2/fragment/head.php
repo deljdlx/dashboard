@@ -117,7 +117,9 @@
 
 
 
-
+<!-- include summernote css/js-->
+<link href="vendor/summernote/dist/summernote.css" rel="stylesheet"/>
+<script src="vendor/summernote/dist/summernote.js"></script>
 
 
 <script>
