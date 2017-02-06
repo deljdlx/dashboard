@@ -6,15 +6,15 @@
         "source": {
             "type": "git",
             "url": "https://github.com/ElBiniou/phpcomponent.git",
-            "reference": "777d87ff0114a643f098e9a919443f5998c4555d"
+            "reference": "a195cc40508515aa62e8ea428708c83f5e63272e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/ElBiniou/phpcomponent/zipball/777d87ff0114a643f098e9a919443f5998c4555d",
-            "reference": "777d87ff0114a643f098e9a919443f5998c4555d",
+            "url": "https://api.github.com/repos/ElBiniou/phpcomponent/zipball/a195cc40508515aa62e8ea428708c83f5e63272e",
+            "reference": "a195cc40508515aa62e8ea428708c83f5e63272e",
             "shasum": ""
         },
-        "time": "2017-02-05T18:52:29+00:00",
+        "time": "2017-02-06T17:21:07+00:00",
         "type": "library",
         "installation-source": "source",
         "autoload": {
