@@ -401,9 +401,17 @@
             <db-panel>
                 <property name="title">Date picker</property>
                 <property name="content">
-                    <db-datepicker></db-datepicker>
+
+
+                    <db-datepicker>
+                        <property name="notice">MOngooooo !!!</property>
+                    </db-datepicker>
+
+
                 </property>
             </db-panel>
+
+
 
 
 

@@ -12,7 +12,9 @@ $template=ob_get_clean();
 $test=new \PHPComponent\Page($template);
 
 
+
 $test->registerComponent('db-cardpanel', '\Elbiniou\Dashboard\Component\CardPanel');
+
 $test->registerComponent('db-panel', '\Elbiniou\Dashboard\Component\Panel');
 $test->registerComponent('db-dropdownmenu', '\Elbiniou\Dashboard\Component\DropDownMenu');
 
