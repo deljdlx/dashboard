@@ -66,12 +66,17 @@
 
 
                 <div class="col-lg-3 col-md-6">
-                    <db-cardpanel>
-                        <property name="color">primary</property>
+
+
+                    <db-cardpanel color="primary">
                         <property name="title">Hélo</property>
                         <property name="subTitle">€ ici ça marche héhéhé</property>
                         <property name="icon">fa-bomb</property>
                     </db-cardpanel>
+
+
+
+
                 </div>
 
 
@@ -129,16 +134,23 @@
                 <property name="icon">fa-hand-pointer-o </property>
                 <property name="content">
                     Panel content
+
+
+
                     <db-barchart>
                         <property name="title">Exemple bar chart</property>
                         <property name="serie" type="json">
                             {
-                            "name": "Yolo",
+                            "name": "coucou",
                             "captions": ["Test1","Test2","Test3","Test4","Test5","Test6"],
                             "values" : [5, 20, 36, 10, 10, 20]
                             }
                         </property>
                     </db-barchart>
+
+
+
+
                 </property>
             </db-panel>
 
