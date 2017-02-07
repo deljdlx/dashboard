@@ -41,9 +41,7 @@
 
 
 <div class="row">
-    <db-panel>
-        <property name="title">Some ripple effetcs</property>
-        <property name="icon">fa-hand-pointer-o </property>
+    <db-panel title="Some ripple effetcs" icon="fa-hand-pointer-o">
         <property name="content">
             <button class="customRipple" data-ripple-color="#FFF" style="padding: 8px;font-size: 22px; background-color: #89669b; border: none; color:#FFF">ça marche</button>
             <div class="customRipple" style="padding: 8px;font-size: 22px; background-color: #444444; border: none; color:#FFF">div with custom ripple</div>
