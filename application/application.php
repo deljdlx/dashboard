@@ -8,6 +8,15 @@ include(__DIR__.'/template/test2/index.php');
 $template=ob_get_clean();
 
 
+if(isset($_GET['debug'])) {
+    \PHPComponent\Template::setStaticRenderer(function($buffer, $instance) {
+        $renderer=new \Elbiniou\Dashboard\Component\Renderer\Debug();
+        return $renderer->render($buffer, $instance);
+    });
+}
+
+
+
 
 $test=new \PHPComponent\Page($template);
 

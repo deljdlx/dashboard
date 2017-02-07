@@ -12,7 +12,7 @@
                 <property name="title">Hélo</property>
                 <property name="content">€ ici ça marche héhéhé</property>
                 <property name="value">0.75</property>
-                <property name="image">tavares.jpg</property>
+                <property name="image">fixture/tavares.jpg</property>
             </db-circlegauge>
         </div>
 
@@ -22,7 +22,7 @@
                 <property name="title">Ça marche</property>
                 <property name="content">€ ici ça marche héhéhé</property>
                 <property name="value">0.56</property>
-                <property name="image">juniac.jpg</property>
+                <property name="image">fixture/juniac.jpg</property>
             </db-circlegauge>
         </div>
     </property>

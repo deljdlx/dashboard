@@ -14,9 +14,9 @@ class DropDownMenu extends \PHPComponent\Component
     );
 
 
-    public function render($template = null, $values = null)
+    public function render($template = null, $values = null, $renderer=null)
     {
-
+        $this->initializeRendering($template, $values, $renderer);
         $template = '
             <div class="btn-group">
                 <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -34,7 +34,7 @@ class DropDownMenu extends \PHPComponent\Component
         ';
 
 
-        $content = parent::render($template, $values);
+        $content = parent::render($template, $values, $renderer);
         return $content;
 
     }

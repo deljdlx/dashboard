@@ -17,9 +17,9 @@ class CardPanel extends \PHPComponent\Component
 
 
 
-    public function render($template=null, $values=null) {
+    public function render($template=null, $values=null, $renderer=null) {
 
-
+        $this->initializeRendering($template, $values, $renderer);
         $template= '
             <div class="panel panel-{{{color}}}">
                 <div class="panel-heading">
@@ -43,7 +43,7 @@ class CardPanel extends \PHPComponent\Component
             </div>
         ';
 
-        return parent::render($template, $values);
+        return parent::render($template, $values, $renderer);
 
     }
 }

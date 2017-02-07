@@ -20,10 +20,10 @@ class Dialog extends \PHPComponent\Component
     );
 
 
-    public function render($template = null, $values = null)
+    public function render($template = null, $values = null, $renderer=null)
     {
 
-
+        $this->initializeRendering($template, $values, $renderer);
         $template = $this->includeTemplate(__DIR__ . '/asset/template.php');
 
 
@@ -38,7 +38,7 @@ class Dialog extends \PHPComponent\Component
         */
 
 
-        return parent::render($template, $values);
+        return parent::render($template, $values, $renderer);
 
     }
 }

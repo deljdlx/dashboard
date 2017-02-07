@@ -18,25 +18,17 @@ class RichEditor extends \PHPComponent\Component
     );
 
 
-    public function render($template = null, $values = null)
+    public function render($template = null, $values = null, $renderer=null)
     {
 
-
+        $this->initializeRendering($template, $values, $renderer);
         $template = '<div id="{{{elementID}}}">{{{content}}}</div>';
 
 
 
-        //$this->addGlobalCSS(file_get_contents(__DIR__ . '/asset/summernote/dist/summernote.css'));
-        //$this->addGlobalJavascript(file_get_contents(__DIR__ . '/asset/summernote/dist/summernote.js'), 'core');
+        $this->addGlobalCSS('vendor/summernote/dist/summernote.css', true);
+        $this->addGlobalJavascript('vendor/summernote/dist/summernote.js', true);
 
-
-
-        /*
-        echo '<pre id="' . __FILE__ . '-' . __LINE__ . '" style="border: solid 1px rgb(255,0,0); background-color:rgb(255,255,255)">';
-        echo '<div style="background-color:rgba(100,100,100,1); color: rgba(255,255,255,1)">' . __FILE__ . '@' . __LINE__ . '</div>';
-        print_r(htmlentities(file_get_contents(__DIR__ . '/asset/summernote/dist/summernote.js')));
-        echo '</pre>';
-        */
 
         $this->addJavascript('
                 $(document).ready(function() {
@@ -45,7 +37,7 @@ class RichEditor extends \PHPComponent\Component
         ');
 
 
-        return parent::render($template, $values);
+        return parent::render($template, $values, $renderer);
 
     }
 }

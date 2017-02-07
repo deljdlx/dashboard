@@ -1,0 +1,39 @@
+.debugContainer {
+    position:relative; outline: dashed 1px;
+}
+
+.debugContainer-caption {
+    border-top: dashed 1px;
+    border-left: dashed 1px;
+    border-right: dashed 1px;
+    font-size: 10px;
+    background-color: rgba(255,255,200, 0.9);
+}
+
+
+.debugContainer-content {
+    position:absolute;
+    left:0;
+    z-index:1000;
+    padding: 3px;
+    top: -16px;
+    left:-3px;
+}
+
+.debugContainer textarea {
+    width:100%;
+    min-height: 300px;
+    padding: 8px;
+}
+
+.debugContainer code {
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:30;
+    border: dashed 1px;
+    width: 500px;
+    padding: 16px;
+    background-color: rgba(255,255,200, 0.9);
+}

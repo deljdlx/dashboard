@@ -11,12 +11,14 @@
             <db-richeditor>
                 <property name="content">
 
+                    <script type="dashboard">
 
-                    <db-circlegauge>
-                        <property name="title">Hélo</property>
-                        <property name="content">€ ici ça marche héhéhé</property>
+                    </script>
+
+
+                    <db-circlegauge title="Hélo" content="€ ici ça marche héhéhé">
                         <property name="value">0.75</property>
-                        <property name="image">tavares.jpg</property>
+                        <property name="image">fixture/tavares.jpg</property>
                     </db-circlegauge>
 
 

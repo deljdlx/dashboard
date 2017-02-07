@@ -24,10 +24,10 @@ class DonutChart extends \PHPComponent\Component
     );
 
 
-    public function render($template = null, $values = null)
+    public function render($template = null, $values = null, $renderer=null)
     {
 
-
+        $this->initializeRendering($template, $values, $renderer);
         $values=$this->getVariable('serie');
 
 
@@ -92,7 +92,7 @@ class DonutChart extends \PHPComponent\Component
         ');
 
 
-        $content = parent::render($template, $values);
+        $content = parent::render($template, $values, $renderer);
         return $content;
 
     }

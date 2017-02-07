@@ -33,15 +33,19 @@ class BarChart extends \PHPComponent\Component
         )
     );
 
-
-    public function render($template = null, $values = null)
+    public function __construct($template = null)
     {
+        parent::__construct($template);
+        $this->template = '<div id="{{{elementID}}}" style="height: {{{height}}};"></div>';
+    }
 
+
+    public function render($template = null, $values = null, $renderer=null)
+    {
+        $this->initializeRendering($template, $values, $renderer);
 
         $values=$this->getVariable('serie');
 
-
-        $template = '<div id="{{{elementID}}}" style="height: {{{height}}};"></div>';
 
         $this->addJavascript('
             (function() {
@@ -71,7 +75,7 @@ class BarChart extends \PHPComponent\Component
         ');
 
 
-        $content = parent::render($template, $values);
+        $content = parent::render($template, $values, $renderer);
         return $content;
 
     }

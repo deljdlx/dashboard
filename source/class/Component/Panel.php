@@ -14,10 +14,10 @@ class Panel extends \PHPComponent\Component
     );
 
 
-    public function render($template = null, $values = null)
+    public function render($template = null, $values = null, $renderer=null)
     {
 
-
+        $this->initializeRendering($template, $values, $renderer);
         $template = '
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -32,7 +32,7 @@ class Panel extends \PHPComponent\Component
         ';
 
 
-        return parent::render($template, $values);
+        return parent::render($template, $values, $renderer);
 
     }
 }
