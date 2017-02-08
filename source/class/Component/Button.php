@@ -2,7 +2,9 @@
 
 namespace Elbiniou\Dashboard\Component;
 
-class Button extends \PHPComponent\Component
+use Elbiniou\Dashboard\Component;
+
+class Button extends Component
 {
 
 

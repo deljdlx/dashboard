@@ -3,7 +3,7 @@
 namespace Elbiniou\Dashboard;
 
 
-use PHPComponent\Component;
+use Elbiniou\Dashboard\Component;
 
 class Renderer extends Component
 {

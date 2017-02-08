@@ -2,9 +2,9 @@
 
 namespace Elbiniou\Dashboard\Component;
 
-use PHPComponent\Component;
+use Elbiniou\Dashboard\Component;
 
-class Panel extends \PHPComponent\Component
+class Panel extends Component
 {
 
 

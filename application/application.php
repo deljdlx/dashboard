@@ -10,7 +10,9 @@ $template=ob_get_clean();
 
 if(isset($_GET['debug'])) {
     \PHPComponent\Template::setStaticRenderer(function($buffer, $instance) {
-        $renderer=new \Elbiniou\Dashboard\Component\Renderer\Debug();
+        //$renderer=new \Elbiniou\Dashboard\Component\Renderer\Debug();
+        $renderer=new \Elbiniou\Dashboard\Component\Renderer\RichEdit();
+
         return $renderer->render($buffer, $instance);
     });
 }

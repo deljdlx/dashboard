@@ -3,7 +3,9 @@
 namespace Elbiniou\Dashboard\Component;
 
 
-class DropDownMenu extends \PHPComponent\Component
+use Elbiniou\Dashboard\Component;
+
+class DropDownMenu extends Component
 {
 
 

@@ -2,8 +2,9 @@
 
 namespace Elbiniou\Dashboard\Component;
 
+use Elbiniou\Dashboard\Component;
 
-class DonutChart extends \PHPComponent\Component
+class DonutChart extends Component
 {
 
 

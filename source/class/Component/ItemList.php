@@ -3,7 +3,9 @@
 namespace Elbiniou\Dashboard\Component;
 
 
-class ItemList extends \PHPComponent\Component
+use Elbiniou\Dashboard\Component;
+
+class ItemList extends Component
 {
 
 

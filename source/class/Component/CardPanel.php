@@ -2,7 +2,9 @@
 
 namespace Elbiniou\Dashboard\Component;
 
-class CardPanel extends \PHPComponent\Component
+use Elbiniou\Dashboard\Component;
+
+class CardPanel extends Component
 {
 
 

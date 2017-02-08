@@ -2,8 +2,8 @@
 
 namespace Elbiniou\Dashboard\Component;
 
-
-class RichEditor extends \PHPComponent\Component
+use Elbiniou\Dashboard\Component;
+class RichEditor extends Component
 {
 
     protected static $globalCSS = array();

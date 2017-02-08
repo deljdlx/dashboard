@@ -1,9 +1,9 @@
 <?php
 
 namespace Elbiniou\Dashboard\Component;
+use Elbiniou\Dashboard\Component;
 
-
-class BarChart extends \PHPComponent\Component
+class BarChart extends Component
 {
 
 

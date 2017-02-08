@@ -2,8 +2,9 @@
 
 namespace Elbiniou\Dashboard\Component;
 
+use Elbiniou\Dashboard\Component;
 
-class Dialog extends \PHPComponent\Component
+class Dialog extends Component
 {
 
     protected static $globalCSS = array();

@@ -1,9 +1,9 @@
 <?php
 
 namespace Elbiniou\Dashboard\Component;
+use Elbiniou\Dashboard\Component;
 
-
-class DatePicker extends \PHPComponent\Component
+class DatePicker extends Component
 {
 
     protected static $globalCSS = array();

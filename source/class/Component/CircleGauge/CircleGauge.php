@@ -3,7 +3,9 @@
 namespace Elbiniou\Dashboard\Component;
 
 
-class CircleGauge extends \PHPComponent\Component
+use Elbiniou\Dashboard\Component;
+
+class CircleGauge extends Component
 {
 
     protected static $globalCSS = array();
