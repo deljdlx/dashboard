@@ -36,6 +36,11 @@ class BarChart extends Component
     public function __construct($template = null)
     {
         parent::__construct($template);
+
+
+        $this->addGlobalJavascript('vendor/echarts.min.js', true);
+
+
         $this->template = '<div id="{{{elementID}}}" style="height: {{{height}}};"></div>';
     }
 

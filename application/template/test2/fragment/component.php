@@ -1,7 +1,33 @@
 
 
 
+
+<div class="modal fade" id="richEditor-dialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
 <div class="row">
+
+
     <db-panel>
         <property name="title">Summer note exemple</property>
         <property name="icon">fa-hand-pointer-o </property>
@@ -11,15 +37,21 @@
             <db-richeditor>
                 <property name="content">
 
-                    <script type="dashboard">
-
-                    </script>
-
-
-                    <db-circlegauge title="Hélo" content="€ ici ça marche héhéhé">
+                    <db-circlegauge title="Carlos Tavares">
+                        <property name="content">
+                            Carlos Antunes Tavares, né le 14 août 1958 à Lisbonne (Portugal), est un dirigeant d'entreprise portugais.
+                        </property>
+                        <property name="subTitle">PDG PSA</property>
                         <property name="value">0.75</property>
                         <property name="image">fixture/tavares.jpg</property>
                     </db-circlegauge>
+
+
+                    <db-cardpanel color="primary">
+                        <property name="title">Hélo</property>
+                        <property name="subTitle">€ ici ça marche héhéhé</property>
+                        <property name="icon">fa-bomb</property>
+                    </db-cardpanel>
 
 
                 </property>

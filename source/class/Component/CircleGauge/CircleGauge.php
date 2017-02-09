@@ -8,6 +8,9 @@ use Elbiniou\Dashboard\Component;
 class CircleGauge extends Component
 {
 
+    protected $renderer;
+    protected static $staticRenderer;
+
     protected static $globalCSS = array();
     protected $css = array();
 
@@ -30,6 +33,7 @@ class CircleGauge extends Component
     public function __construct($template = null)
     {
         parent::__construct($template);
+
         $this->addGlobalCSS(file_get_contents(__DIR__ . '/asset/style.css'));
         $this->addGlobalJavascript(file_get_contents(__DIR__ . '/asset/jquery-circle-progress/dist/circle-progress.min.js'));
         $this->addGlobalJavascript(file_get_contents(__DIR__ . '/asset/CircleGauge.js'));

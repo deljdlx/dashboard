@@ -8,6 +8,10 @@ class CardPanel extends Component
 {
 
 
+    protected $renderer;
+    protected static $staticRenderer;
+
+
     protected $variableCollection=array(
         'color'=>'green',
         'title'=>'Title',
@@ -17,12 +21,10 @@ class CardPanel extends Component
 
     );
 
-
-
-    public function render($template=null, $values=null, $renderer=null) {
-
-        $this->initializeRendering($template, $values, $renderer);
-        $template= '
+    public function __construct($template = null)
+    {
+        parent::__construct($template);
+        $this->template='
             <div class="panel panel-{{{color}}}">
                 <div class="panel-heading">
                     <div class="row">
@@ -44,7 +46,12 @@ class CardPanel extends Component
                 </a>
             </div>
         ';
+    }
 
+
+    public function render($template=null, $values=null, $renderer=null) {
+
+        $this->initializeRendering($template, $values, $renderer);
         return parent::render($template, $values, $renderer);
 
     }

@@ -24,6 +24,13 @@ class DonutChart extends Component
         )
     );
 
+    public function __construct($template = null)
+    {
+        parent::__construct($template);
+        $this->addGlobalJavascript('vendor/echarts.min.js', true);
+    }
+
+
 
     public function render($template = null, $values = null, $renderer=null)
     {

@@ -112,14 +112,18 @@
 <script src="source/class/Component/Ripple/Ripple.Js"></script>
 <link rel="stylesheet" href="source/class/Component/Tree/css/jstree-fontawesome.css"/>
 <script src="source/class/Component/Tree/Tree.js"></script>
+
+
+<!--
 <script src="vendor/echarts.min.js"></script>
+//-->
 
 
 
 
 <!-- include summernote css/js-->
 <!--<link href="vendor/summernote/dist/summernote.css" rel="stylesheet"/>//-->
-<script src="vendor/summernote/dist/summernote.js"></script>
+<!--<script src="vendor/summernote/dist/summernote.js"></script>//-->
 
 
 <script>
