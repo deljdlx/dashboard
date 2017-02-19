@@ -47,12 +47,4 @@ class CardPanel extends Component
             </div>
         ';
     }
-
-
-    public function render($template=null, $values=null, $renderer=null) {
-
-        $this->initializeRendering($template, $values, $renderer);
-        return parent::render($template, $values, $renderer);
-
-    }
 }

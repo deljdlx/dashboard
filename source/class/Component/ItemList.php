@@ -14,10 +14,10 @@ class ItemList extends Component
     );
 
 
-    public function render($template = null, $values = null, $renderer=null)
+    public function render()
     {
-        $this->initializeRendering($template, $values, $renderer);
-        $template = '
+
+        $this->template = '
                     <div class="list-group">
                         {{#items}}
                         <a href="{{{url}}}" class="list-group-item">
@@ -30,8 +30,6 @@ class ItemList extends Component
         ';
 
 
-        $content = parent::render($template, $values);
-        return $content;
-
+        return parent::render();
     }
 }

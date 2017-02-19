@@ -2,7 +2,7 @@
 
 
 ini_set('display_errors', 'on');
-
+error_reporting(E_ALL);
 
 $test=new \Elbiniou\Dashboard\Component\CardPanel();
 
@@ -21,7 +21,7 @@ $template=ob_get_clean();
 if(isset($_GET['debug'])) {
     \Elbiniou\Dashboard\Component\CircleGauge::setStaticRenderer(function($buffer, $instance) {
         //$renderer=new \Elbiniou\Dashboard\Component\Renderer\Debug();
-        $renderer=new \Elbiniou\Dashboard\Component\Renderer\RichEdit();
+        $renderer=new \Elbiniou\Dashboard\Renderer\RichEdit();
         return $renderer->render($buffer, $instance);
     });
 
@@ -29,7 +29,7 @@ if(isset($_GET['debug'])) {
 
     \Elbiniou\Dashboard\Component\CardPanel::setStaticRenderer(function($buffer, $instance) {
         //$renderer=new \Elbiniou\Dashboard\Component\Renderer\Debug();
-        $renderer=new \Elbiniou\Dashboard\Component\Renderer\RichEdit();
+        $renderer=new \Elbiniou\Dashboard\Renderer\RichEdit();
         return $renderer->render($buffer, $instance);
     });
 

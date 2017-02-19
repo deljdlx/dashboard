@@ -1,7 +1,7 @@
 <div id="{{{elementID}}}" class="circleGraph" data-value="{{{value}}}">
     <div class="graph">
         <div class="circle">
-            <img src="{{{image}}}" alt="photo">
+            <img src="{{{image}}}" alt="{{{image}}}">
         </div>
         <div class="value">{{{valueCaption}}}</div>
     </div>

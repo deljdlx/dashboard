@@ -39,21 +39,25 @@ class BarChart extends Component
 
 
         $this->addGlobalJavascript('vendor/echarts.min.js', true);
-
-
         $this->template = '<div id="{{{elementID}}}" style="height: {{{height}}};"></div>';
+
+
     }
 
 
-    public function render($template = null, $values = null, $renderer=null)
+
+
+    public function render()
     {
-        $this->initializeRendering($template, $values, $renderer);
 
         $values=$this->getVariable('serie');
 
 
+
+
         $this->addJavascript('
-            (function() {
+            $(function() {
+
                 var myChart = echarts.init(document.getElementById(\''.$this->getVariable('elementID').'\'));
                 // specify chart configuration item and data
                 var option = {
@@ -75,12 +79,13 @@ class BarChart extends Component
                     }]
                 }
                 myChart.setOption(option);
-            })();
-            </script>
+            });
         ');
 
 
-        $content = parent::render($template, $values, $renderer);
+
+
+        $content = parent::render();
         return $content;
 
     }

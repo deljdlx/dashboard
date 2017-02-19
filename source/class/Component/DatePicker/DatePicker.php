@@ -21,11 +21,11 @@ class DatePicker extends Component
     );
 
 
-    public function render($template = null, $values = null, $renderer=null)
+    public function render()
     {
 
-        $this->initializeRendering($template, $values, $renderer);
-        $template = $this->includeTemplate(__DIR__ . '/asset/template.php');
+
+        $this->template = $this->includeTemplate(__DIR__ . '/asset/template.php');
 
 
         $this->addGlobalCSS(file_get_contents(__DIR__ . '/asset/css/bootstrap-datepicker3.min.css'));
@@ -44,7 +44,7 @@ class DatePicker extends Component
         ');
 
 
-        return parent::render($template, $values, $renderer);
+        return parent::render();
 
     }
 }

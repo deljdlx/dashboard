@@ -16,10 +16,10 @@ class DropDownMenu extends Component
     );
 
 
-    public function render($template = null, $values = null, $renderer=null)
+    public function render()
     {
-        $this->initializeRendering($template, $values, $renderer);
-        $template = '
+
+        $this->template = '
             <div class="btn-group">
                 <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
                     {{{title}}}
@@ -36,7 +36,7 @@ class DropDownMenu extends Component
         ';
 
 
-        $content = parent::render($template, $values, $renderer);
+        $content = parent::render();
         return $content;
 
     }

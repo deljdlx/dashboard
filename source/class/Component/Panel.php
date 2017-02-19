@@ -14,11 +14,11 @@ class Panel extends Component
     );
 
 
-    public function render($template = null, $values = null, $renderer=null)
+    public function render()
     {
 
-        $this->initializeRendering($template, $values, $renderer);
-        $template = '
+
+        $this->template = '
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <i class="fa {{{icon}}} fa-fw"></i> {{{title}}}
@@ -32,7 +32,7 @@ class Panel extends Component
         ';
 
 
-        return parent::render($template, $values, $renderer);
+        return parent::render();
 
     }
 }

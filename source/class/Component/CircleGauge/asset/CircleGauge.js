@@ -5,7 +5,12 @@ DB_CircleGauge=function()
 
 DB_CircleGauge.prototype.render=function(element) {
 
-	element=$(element).get(0);
+	var element=$(element).get(0);
+
+
+	if(!element) {
+		return false;
+	}
 
 	this.element=element;
 	$(element).find('.circle').circleProgress({

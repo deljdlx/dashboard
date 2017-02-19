@@ -588,7 +588,7 @@
     <script type="text/javascript">
 
 
-
+/*
 
         var myChart = echarts.init(document.getElementById('area-chart'));
         // specify chart configuration item and data
@@ -629,6 +629,6 @@
         };
         // use configuration item and data specified to show chart
         myChart.setOption(option);
-
+*/
 
     </script>

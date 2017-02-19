@@ -4,6 +4,7 @@ namespace Elbiniou\Dashboard\Component;
 
 
 use Elbiniou\Dashboard\Component;
+use PHPComponent\DOMDocument;
 
 class CircleGauge extends Component
 {
@@ -38,23 +39,29 @@ class CircleGauge extends Component
         $this->addGlobalJavascript(file_get_contents(__DIR__ . '/asset/jquery-circle-progress/dist/circle-progress.min.js'));
         $this->addGlobalJavascript(file_get_contents(__DIR__ . '/asset/CircleGauge.js'));
 
+        $this->template = $this->includeTemplate(__DIR__ . '/asset/template.php');
+    }
+
+
+
+
+
+
+    public function render()
+    {
+
+        if ($this->getVariable('valueCaption') === null) {
+            $this->setVariable('valueCaption', ($this->getVariable('value')*100) . '%');
+        }
+
+
         $this->addJavascript('
             var test=new DB_CircleGauge();
             test.render("#' . $this->getVariable('elementID') . '");'
         );
 
-        $this->template = $this->includeTemplate(__DIR__ . '/asset/template.php');
-    }
+        return parent::render();
 
-
-    public function render($template = null, $values = null, $renderer = null)
-    {
-        $this->initializeRendering($template, $values, $renderer);
-
-        if ($this->getVariable('valueCaption') === null) {
-            $this->setVariable('valueCaption', $this->getVariable('value') . '%');
-        }
-        return parent::render($this->template, $values, $renderer);
 
     }
 }

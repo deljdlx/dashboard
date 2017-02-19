@@ -32,10 +32,10 @@ class DonutChart extends Component
 
 
 
-    public function render($template = null, $values = null, $renderer=null)
+    public function render()
     {
 
-        $this->initializeRendering($template, $values, $renderer);
+
         $values=$this->getVariable('serie');
 
 
@@ -48,8 +48,10 @@ class DonutChart extends Component
         }
 
 
-        $template = '<div id="{{{elementID}}}" style="height: {{{height}}};"></div>';
+        $this->template = '<div id="{{{elementID}}}" style="height: {{{height}}};"></div>';
 
+
+        /*
         $this->addJavascript('
             (function() {
                 var myChart = echarts.init(document.getElementById(\''.$this->getVariable('elementID').'\'));
@@ -96,11 +98,11 @@ class DonutChart extends Component
                 myChart.setOption(option);
 
             })();
-            </script>
         ');
+        */
 
 
-        $content = parent::render($template, $values, $renderer);
+        $content = parent::render();
         return $content;
 
     }

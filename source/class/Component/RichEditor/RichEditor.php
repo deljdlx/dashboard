@@ -1,8 +1,10 @@
 <?php
 
 namespace Elbiniou\Dashboard\Component;
-
 use Elbiniou\Dashboard\Component;
+
+
+
 class RichEditor extends Component
 {
 
@@ -18,11 +20,11 @@ class RichEditor extends Component
     );
 
 
-    public function render($template = null, $values = null, $renderer=null)
+    public function render()
     {
 
-        $this->initializeRendering($template, $values, $renderer);
-        $template = '<div id="{{{elementID}}}">{{{content}}}</div>';
+
+        $this->template = '<div id="{{{elementID}}}">{{{content}}}</div>';
 
 
 
@@ -37,7 +39,7 @@ class RichEditor extends Component
         ');
 
 
-        return parent::render($template, $values, $renderer);
+        return parent::render();
 
     }
 }

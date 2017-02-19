@@ -21,11 +21,11 @@ class Button extends Component
 
     public function render($template=null, $values=null, $renderer=null) {
 
-        $this->initializeRendering($template, $values, $renderer);
-        $template= '<a href="{{{href}}}" class="btn btn-raised btn-{{{class}}}">{{{caption}}}</a>';
+
+        $this->template= '<a href="{{{href}}}" class="btn btn-raised btn-{{{class}}}">{{{caption}}}</a>';
 
 
-        return parent::render($template, $values, $renderer);
+        return parent::render();
 
     }
 }

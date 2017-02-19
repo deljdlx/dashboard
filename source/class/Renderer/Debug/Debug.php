@@ -1,6 +1,6 @@
 <?php
 
-namespace Elbiniou\Dashboard\Component\Renderer;
+namespace Elbiniou\Dashboard\Renderer;
 
 
 use Elbiniou\Dashboard\Renderer;
