@@ -1,4 +1,59 @@
+					<div class="title">
+						<h3>Buttons <br />
+							<small>Pick your style</small>
+						</h3>
+					</div>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<button class="btn btn-primary">Default</button>
+							<button class="btn btn-primary btn-round">Round</button>
+							<button class="btn btn-primary btn-round">
+								<i class="material-icons">favorite</i> With Icon
+							</button>
+							<button class="btn btn-primary btn-fab btn-fab-mini btn-round">
+								<i class="material-icons">favorite</i>
+							</button>
+							<button class="btn btn-primary btn-simple">Simple</button>
+						</div>
+					</div>
+					<div class="title">
+	                    <h3><small>Pick your size</small></h3>
+	                </div>
+	                <div class="row">
+	                    <div class="col-md-8 col-md-offset-2">
+	                        <button class="btn btn-primary btn-xs">x-Small</button>
+	                        <button class="btn btn-primary btn-sm">Small</button>
+	                        <button class="btn btn-primary">Regular</button>
+	                        <button class="btn btn-primary btn-lg">Large</button>
+	                    </div>
+	                </div>
 
+					<div class="title">
+	                    <h3><small> Pick your color </small></h3>
+	                </div>
+	                <div class="row">
+	                    <div class="col-md-8 col-md-offset-2">
+	                        <button class="btn">Default</button>
+	                        <button class="btn btn-primary">Primary</button>
+	                        <button class="btn btn-info">Info</button>
+	                        <button class="btn btn-success">Success</button>
+	                        <button class="btn btn-warning">Warning</button>
+	                        <button class="btn btn-danger">Danger</button>
+	                    </div>
+	                </div>
+	                <div class="title">
+	                    <h3>Links</h3>
+	                </div>
+	                <div class="row">
+	                    <div class="col-md-8 col-md-offset-2">
+	                        <button class="btn btn-simple">Default</button>
+	                        <button class="btn btn-simple btn-primary ">Primary</button>
+	                        <button class="btn btn-simple btn-info">Info</button>
+	                        <button class="btn btn-simple btn-success">Success</button>
+	                        <button class="btn btn-simple btn-warning">Warning</button>
+	                        <button class="btn btn-simple btn-danger">Danger</button>
+	                    </div>
+	                </div>
 
 <div class="bs-docs-section">
     <div class="page-header">

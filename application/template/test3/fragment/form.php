@@ -1,4 +1,67 @@
+
+
+
+		            <div class="title">
+		                <h3>Inputs</h3>
+		            </div>
+
+		            <div class="row">
+						<div class="col-sm-3">
+		                	<div class="form-group">
+		        	        	<input type="text" value="" placeholder="Regular" class="form-control" />
+		                	</div>
+		                </div>
+
+						<div class="col-sm-3">
+							<div class="form-group label-floating">
+								<label class="control-label">With Floating Label</label>
+								<input type="email" class="form-control">
+							</div>
+						</div>
+
+		                <div class="col-sm-3">
+		                	<div class="form-group label-floating has-success">
+								<label class="control-label">Success input</label>
+		                    	<input type="text" value="Success" class="form-control" />
+								<span class="form-control-feedback">
+									<i class="material-icons">done</i>
+								</span>
+		                	</div>
+		                </div>
+
+		                <div class="col-sm-3">
+		                	<div class="form-group label-floating has-error">
+								<label class="control-label">Error input</label>
+		                    	<input type="email" value="Error Input" class="form-control" />
+		                    	<span class="material-icons form-control-feedback">clear</span>
+		                	</div>
+		                </div>
+
+						<div class="col-sm-3">
+							<div class="input-group">
+								<span class="input-group-addon">
+									<i class="material-icons">group</i>
+								</span>
+								<input type="text" class="form-control" placeholder="With Material Icons">
+							</div>
+						</div>
+
+						<div class="col-sm-3">
+							<div class="input-group">
+								<span class="input-group-addon">
+									<i class="fa fa-group"></i>
+								</span>
+								<input type="text" class="form-control" placeholder="With Font Awesome Icons">
+							</div>
+						</div>
+					</div>
+
 <!-- Forms
+
+
+
+
+
 ================================================== -->
 <div class="bs-docs-section">
     <div class="row">
