@@ -14,7 +14,7 @@
             "reference": "0e7b3c32871883f2cef9bb5597ca94e77cfd48ab",
             "shasum": ""
         },
-        "time": "2017-02-19 17:04:03",
+        "time": "2017-02-19T17:04:03+00:00",
         "type": "library",
         "installation-source": "source",
         "autoload": {

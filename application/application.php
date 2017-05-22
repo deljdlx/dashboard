@@ -14,7 +14,7 @@ die('EXIT '.__FILE__.'@'.__LINE__);
 */
 
 ob_start();
-include(__DIR__.'/template/test2/index.php');
+include(__DIR__.'/template/test3/index.php');
 $template=ob_get_clean();
 
 
@@ -76,4 +76,4 @@ $test->registerComponent('db-richeditor', '\Elbiniou\Dashboard\Component\RichEdi
 header('Content-type: text/html; charset=utf-8');
 
 echo $test->render();
-echo '<hr/>';
+

@@ -57,13 +57,29 @@ body.inverse .card .form-control {
   background-color: initial;
   color: initial;
 }
-
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
+}
 h5,
 h6 {
   font-weight: 400;
 }
-
-
+a,
+a:hover,
+a:focus {
+  color: #009688;
+}
 a .material-icons,
 a:hover .material-icons,
 a:focus .material-icons {
@@ -185,9 +201,12 @@ body .container-fluid .jumbotron-danger {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-
-
-
+.btn:not(.btn-raised),
+.input-group-btn .btn:not(.btn-raised),
+.btn:not(.btn-raised).btn-default,
+.input-group-btn .btn:not(.btn-raised).btn-default {
+  color: rgba(0,0,0, 0.87);
+}
 .btn:not(.btn-raised).btn-inverse,
 .input-group-btn .btn:not(.btn-raised).btn-inverse {
   color: #3f51b5;
@@ -747,6 +766,7 @@ fieldset[disabled][disabled] .btn-group-vertical.btn-group-raised:focus:not(:act
 .btn-group,
 .btn-group-vertical {
   position: relative;
+  margin: 10px 1px;
 }
 .btn-group.open > .dropdown-toggle.btn,
 .btn-group-vertical.open > .dropdown-toggle.btn,
@@ -2110,6 +2130,9 @@ legend {
 .list-group .list-group-item {
   background-color: transparent;
   overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  padding: 0 16px;
 }
 .list-group .list-group-item.baseline {
   border-bottom: 1px solid #cecece;
@@ -2215,7 +2238,11 @@ legend {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   float: right;
 }
-
+.navbar {
+  background-color: #009688;
+  border: 0;
+  border-radius: 0;
+}
 .navbar .navbar-brand {
   position: relative;
   height: 60px;
@@ -2294,6 +2321,10 @@ legend {
     font-family: 'Material Icons';
     font-size: 1.5em;
     float: right;
+    -webkit-font-feature-settings: 'liga';
+       -moz-font-feature-settings: 'liga';
+            font-feature-settings: 'liga';
+    /* Support for IE. */
   }
   .navbar .navbar-nav .dropdown .dropdown-menu {
     margin-left: 20px;
@@ -2371,8 +2402,11 @@ fieldset[disabled] .navbar .btn-link:focus {
   font-size: 14px;
   line-height: 1.42857143;
 }
-
-
+.navbar,
+.navbar.navbar-default {
+  background-color: #009688;
+  color: rgba(255,255,255, 0.84);
+}
 .navbar .navbar-form .form-group input.form-control::-moz-placeholder,
 .navbar.navbar-default .navbar-form .form-group input.form-control::-moz-placeholder,
 .navbar .navbar-form input.form-control::-moz-placeholder,
@@ -2972,11 +3006,12 @@ fieldset[disabled] .navbar .btn-link:focus {
   background: rgba(0, 0, 0, 0.3);
 }
 .panel {
-
+  border-radius: 2px;
+  border: 0;
   -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
 }
-
+.panel > .panel-heading,
 .panel.panel-default > .panel-heading {
   background-color: #eeeeee;
 }
