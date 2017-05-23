@@ -42,6 +42,14 @@ if(isset($_GET['debug'])) {
 $test=new \PHPComponent\Page($template);
 
 
+$test->registerComponent('db-checkbox', '\Elbiniou\Dashboard\Component\Input\Checkbox');
+$test->registerComponent('db-toggle', '\Elbiniou\Dashboard\Component\Input\Toggle');
+$test->registerComponent('db-radio', '\Elbiniou\Dashboard\Component\Input\Radio');
+$test->registerComponent('db-input', '\Elbiniou\Dashboard\Component\Input\Input');
+
+
+
+
 
 $test->registerComponent('db-cardpanel', '\Elbiniou\Dashboard\Component\CardPanel');
 

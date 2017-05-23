@@ -1,6 +1,41 @@
 
 
 
+<hr/>
+<db-radio caption="Radio" name="r1"></db-radio>
+<hr/>
+<db-radio caption="Radio checked" checked="true" name="r1"></db-radio>
+<hr/>
+<db-radio caption="Radio disabled" disabled="true" name="r3"></db-radio>
+<hr/>
+<db-radio caption="Radio checked disabled" checked="true" disabled="true" name="r4"></db-radio>
+
+
+
+<hr/>
+<db-checkbox caption="Checkbox"></db-checkbox>
+<hr/>
+<db-checkbox caption="Checkbox checked" checked="true"></db-checkbox>
+<hr/>
+<db-checkbox caption="Checkbox disabled" disabled="true"></db-checkbox>
+<hr/>
+<db-checkbox caption="Checkbox disabled and checked" disabled="true" checked="true"></db-checkbox>
+<hr/>
+<db-toggle caption="Toggle on" checked="true"></db-toggle>
+<hr/>
+<db-toggle caption="Toggle off"></db-toggle>
+
+
+
+<hr/>
+<db-input placeholder="Input text"></db-input>
+<db-input  caption="Input text"></db-input>
+<db-input floating-label="true" caption="Floating label"></db-input>
+<db-input  caption="Input text disabled" readonly="true"></db-input>
+
+
+
+
 		            <div class="title">
 		                <h3>Inputs</h3>
 		            </div>
@@ -93,47 +128,15 @@
 
                             <div class="col-md-10">
                                 <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            </div>
+                        </div>
 
-                                <!--
-                                <div class="checkbox">
-                                  <label>
-                                    <input type="checkbox"> Checkbox
-                                  </label>
-                                  <label>
-                                    <input type="checkbox" disabled> Disabled Checkbox
-                                  </label>
-                                </div>
-                                <br>
 
-                                <div class="togglebutton">
-                                  <label>
-                                    <input type="checkbox" checked> Toggle button
-                                  </label>
-                                </div>
-                                -->
-                            </div>
-                        </div>
-                        <div class="form-group" style="margin-top: 0;"> <!-- inline style is just to demo custom css to put checkbox below input above -->
-                            <div class="col-md-offset-2 col-md-10">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox"> Checkbox
-                                    </label>
-                                    <label>
-                                        <input type="checkbox" disabled> Disabled Checkbox
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-offset-2 col-md-10">
-                                <div class="togglebutton">
-                                    <label>
-                                        <input type="checkbox" checked> Toggle button
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
+
+
+
+
+
                         <div class="form-group">
                             <label for="inputFile" class="col-md-2 control-label">File</label>
 
