@@ -8,19 +8,31 @@ class Input extends Component
 {
 
 
-    protected $variableCollection=array(
-        'name'=>'checkbox',
-        'caption'=>'',
-        'readonly'=>false,
-        'placeholder'=>'',
-        'value'=>'',
-        'floating-label'=>false,
+    protected $variableCollection = array(
+        'type' => 'text',
+        'name' => 'checkbox',
+        'caption' => '',
+        'readonly' => false,
+        'placeholder' => '',
+        'value' => '',
+        'floating-label' => false,
+        'error' => false,
+        'success' => false,
     );
 
 
+    public function render($template = null, $values = null, $renderer = null)
+    {
 
-    public function render($template=null, $values=null, $renderer=null) {
+        $error = '';
+        if ($this->getVariable('error')) {
+            $error = 'has-error';
+        }
 
+        $success = '';
+        if ($this->getVariable('success')) {
+            $success = 'has-success';
+        }
 
         $disabled = '';
         if ($this->getVariable('readonly')) {
@@ -32,15 +44,15 @@ class Input extends Component
             $floatingLabel = 'label-floating';
         }
 
-        $caption='';
-        if($this->getVariable('caption')) {
-            $caption='<label class="control-label">'.$this->getVariable('caption').'</label>';
+        $caption = '';
+        if ($this->getVariable('caption')) {
+            $caption = '<label class="control-label">' . $this->getVariable('caption') . '</label>';
         }
 
-        $this->template= '
-            <div class="form-group '.$floatingLabel.'">
-                '.$caption.'
-                <input type="text" value="{{{value}}}" placeholder="{{{placeholder}}}" class="form-control" name="{{{name}}}" '.$disabled.'/>
+        $this->template = '
+            <div class="form-group ' . $floatingLabel . ' '.$error.' '.$success.'">
+                ' . $caption . '
+                <input type="{{{type}}}" name="{{{name}}}" value="{{{value}}}" placeholder="{{{placeholder}}}" class="form-control" ' . $disabled . '/>
             </div>';
 
 
