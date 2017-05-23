@@ -49,6 +49,9 @@ $test->registerComponent('db-input', '\Elbiniou\Dashboard\Component\Input\Input'
 
 
 
+$test->registerComponent('db-notification', '\Elbiniou\Dashboard\Component\Notification');
+
+
 
 
 $test->registerComponent('db-cardpanel', '\Elbiniou\Dashboard\Component\CardPanel');

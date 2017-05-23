@@ -10,6 +10,8 @@
 <body class="index-page">
 
 
+<db-notification></db-notification>
+
 
 
 <!-- Navbar 
