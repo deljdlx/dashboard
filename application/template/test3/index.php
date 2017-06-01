@@ -10,9 +10,6 @@
 <body class="index-page">
 
 
-<db-notification></db-notification>
-
-
 
 <!-- Navbar 
 <nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
@@ -76,13 +73,13 @@
 
 
 
-	<div class="header header-filter" style="background-image: url('vendor/x_material_kit_free_v1.1.1/assets/img/bg2.jpeg');">
+	<div class="header header-filter" style="">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
-					<div class="brand">
-						<h1>Material Kit.</h1>
-						<h3>A Badass Bootstrap UI Kit based on Material Design.</h3>
+					<div class="">
+						<h1>Title H1</h1>
+						<h3>Title H3</h3>
 					</div>
 				</div>
 			</div>
@@ -93,8 +90,10 @@
 	<div class="main main-raised">
 		<div class="section section-basic">
 	    	<div class="container">
-			
-			
+
+
+
+                <?php require(__DIR__.'/fragment/notification.php'); ?>
 				
 				<?php require(__DIR__.'/fragment/circleProgress.php'); ?>
 
@@ -246,60 +245,11 @@
 
 				<div class="space"></div>
 
-	            <div class="title">
-	                <h3>Notifications</h3>
-	            </div>
+
 	        </div>
 	    </div>
 
-	    <div class="section section-notifications" id="notifications">
-	        <div class="alert alert-info">
-	            <div class="container-fluid">
-					<div class="alert-icon">
-						<i class="material-icons">info_outline</i>
-					</div>
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span aria-hidden="true"><i class="material-icons">clear</i></span>
-					</button>
 
-	            	<b>Info alert:</b> You've got some friends nearby, stop looking at your phone and find them...
-	            </div>
-	        </div>
-	        <div class="alert alert-success">
-	            <div class="container-fluid">
-					<div class="alert-icon">
-						<i class="material-icons">check</i>
-					</div>
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span aria-hidden="true"><i class="material-icons">clear</i></span>
-					</button>
-	            	<b>Success Alert:</b> Yuhuuu! You've got your $11.99 album from The Weeknd
-	            </div>
-	        </div>
-	        <div class="alert alert-warning">
-	             <div class="container-fluid">
-					 <div class="alert-icon">
-						<i class="material-icons">warning</i>
-					</div>
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span aria-hidden="true"><i class="material-icons">clear</i></span>
-					</button>
-	                 <b>Warning Alert:</b> Hey, it looks like you still have the "copyright &copy;  2015" in your footer. Please update it!
-	            </div>
-	        </div>
-	        <div class="alert alert-danger">
-	             <div class="container-fluid">
-					 <div class="alert-icon">
-						<i class="material-icons">error_outline</i>
-					</div>
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span aria-hidden="true"><i class="material-icons">clear</i></span>
-					</button>
-	                 <b>Error Alert:</b> Damn man! You screwed up the server this time. You should find a good excuse for your Boss...
-	            </div>
-	        </div>
-	        <div class="clearfix"></div>
-	    </div><!--  end notifications -->
 
 	    <div class="section">
 	        <div class="container tim-container">

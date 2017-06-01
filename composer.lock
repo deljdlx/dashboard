@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b811cff1d47ea826f9efede2aa8348fa",
+    "content-hash": "5558d3b515d059170261e2eb58c7657c",
     "packages": [
         {
-            "name": "elbiniou-phpcomponent",
+            "name": "phi-component",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ElBiniou/phpcomponent.git",
-                "reference": "0e7b3c32871883f2cef9bb5597ca94e77cfd48ab"
+                "url": "https://github.com/ElBiniou/phi-component.git",
+                "reference": "f8a432f3a95c7a79f1182ae747dbd2014db4401d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ElBiniou/phpcomponent/zipball/0e7b3c32871883f2cef9bb5597ca94e77cfd48ab",
-                "reference": "0e7b3c32871883f2cef9bb5597ca94e77cfd48ab",
+                "url": "https://api.github.com/repos/ElBiniou/phi-component/zipball/f8a432f3a95c7a79f1182ae747dbd2014db4401d",
+                "reference": "f8a432f3a95c7a79f1182ae747dbd2014db4401d",
                 "shasum": ""
             },
             "type": "library",
@@ -26,23 +26,23 @@
                     "Mustache": "vendor/mustache/src"
                 },
                 "psr-4": {
-                    "PHPComponent\\": "source/class"
+                    "Phi\\Component\\": "source/class"
                 },
                 "files": []
             },
-            "description": "PHP web-components",
+            "description": "Phi web-components",
             "support": {
-                "source": "https://github.com/ElBiniou/phpcomponent/tree/master",
-                "issues": "https://github.com/ElBiniou/phpcomponent/issues"
+                "source": "https://github.com/ElBiniou/phi-component/tree/master",
+                "issues": "https://github.com/ElBiniou/phi-component/issues"
             },
-            "time": "2017-02-19 17:04:03"
+            "time": "2017-06-01 13:33:39"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "elbiniou-phpcomponent": 20
+        "phi-component": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -5,6 +5,8 @@
 					</div>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2">
+
+
 							<button class="btn btn-primary">Default</button>
 							<button class="btn btn-primary btn-round">Round</button>
 							<button class="btn btn-primary btn-round">
@@ -14,6 +16,10 @@
 								<i class="material-icons">favorite</i>
 							</button>
 							<button class="btn btn-primary btn-simple">Simple</button>
+
+
+
+
 						</div>
 					</div>
 					<div class="title">

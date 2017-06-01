@@ -3,7 +3,7 @@
 	<link rel="icon" type="image/png" href="vendor/x_material_kit_free_v1.1.1/assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Material Kit by Creative Tim</title>
+	<title>Dashboard test</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 

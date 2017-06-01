@@ -3,7 +3,7 @@
 namespace Elbiniou\Dashboard;
 
 
-class Component extends \PHPComponent\Component
+class Component extends \Phi\Component\Component
 {
 
 

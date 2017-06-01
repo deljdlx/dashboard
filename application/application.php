@@ -39,7 +39,7 @@ if(isset($_GET['debug'])) {
 
 
 
-$test=new \PHPComponent\Page($template);
+$test=new \Phi\Component\Page($template);
 
 
 $test->registerComponent('db-checkbox', '\Elbiniou\Dashboard\Component\Input\Checkbox');
@@ -49,7 +49,13 @@ $test->registerComponent('db-input', '\Elbiniou\Dashboard\Component\Input\Input'
 
 
 
-$test->registerComponent('db-notification', '\Elbiniou\Dashboard\Component\Notification');
+$test->registerComponent('db-notification-info', '\Elbiniou\Dashboard\Component\Notification\Info');
+$test->registerComponent('db-notification-success', '\Elbiniou\Dashboard\Component\Notification\Success');
+$test->registerComponent('db-notification-warning', '\Elbiniou\Dashboard\Component\Notification\Warning');
+$test->registerComponent('db-notification-error', '\Elbiniou\Dashboard\Component\Notification\Error');
+
+
+
 
 
 

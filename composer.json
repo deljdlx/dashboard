@@ -2,12 +2,12 @@
 	"name": "elbiniou-dashboard",
 	"description": "PHP component for dashboard build",
 	"repositories": [
-		{"type": "vcs", "url": "https://github.com/ElBiniou/phpcomponent"}
+		{"type": "vcs", "url": "https://github.com/ElBiniou/phi-component"}
 
 	],
 	"require":
 	{
-		"elbiniou-phpcomponent": "dev-master"
+		"phi-component": "dev-master"
 	},
 	"require-dev": {
 	},
