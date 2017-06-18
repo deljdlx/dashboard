@@ -71,22 +71,55 @@
 <div class="wrapper">
 
 
-    <div class="header header-filter" style="">
-        <div class="container">
+    <header>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <div class="">
                         <h1>Title H1</h1>
-                        <h3>Title H3</h3>
-                    </div>
                 </div>
             </div>
+    </header>
 
-        </div>
-    </div>
 
-    <div class="main main-raised">
+
+
+
+
+
+    <div class="">
         <div class="section section-basic">
+
+
+
+            <div class="row active-with-click">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <db-card title="Bill Murrey">
+                        <property name="subTitle">Lost in translation</property>
+                        <property name="footer">
+                            <a class="fa fa-fw fa-facebook"></a>
+                            <a class="fa fa-fw fa-twitter"></a>
+                            <a class="fa fa-fw fa-linkedin"></a>
+                            <a class="fa fa-fw fa-google-plus"></a>
+                        </property>
+                    </db-card>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <db-card></db-card>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <db-card></db-card>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <db-card></db-card>
+                </div>
+
+            </div>
+
+
+
+
             <div class="container">
 
 
@@ -94,13 +127,6 @@
 
                 <?php require(__DIR__ . '/fragment/circleProgress.php'); ?>
 
-
-                <div class="row active-with-click">
-                        <db-card></db-card>
-                        <db-card></db-card>
-                        <db-card></db-card>
-
-                </div>
 
 
 
@@ -549,22 +575,13 @@
 
         $().ready(function () {
 
-            //console.debug('ici');
-
             // the body of this function is in assets/material-kit.js
 
             materialKit.initSliders();
 
-
-            window_width = $(window).width();
-
-            if (window_width >= 992) {
-                big_image = $('.wrapper > .header');
-
-                $(window).on('scroll', materialKitDemo.checkScrollForParallax);
-            }
-
         });
+
+
     </script>
 
 

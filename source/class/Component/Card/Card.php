@@ -15,21 +15,14 @@ class Card extends Component
 
 
     protected $variableCollection = array(
+        'height'=>'300px',
+        'footerHeight'=>'90px',
         'titleTag'=>'h2',
-        'image'=>'http://www.fillmurray.com/200/300',
+        'image'=>'http://www.fillmurray.com/350/350',
         'title' => 'Here $title',
         'subTitle'=>'Here $subTitle',
-        'description' => 'Here $description',
-
-        'footer' => '
-            <h4>
-                Footer
-            </h4>
-            <a class="fa fa-fw fa-facebook"></a>
-            <a class="fa fa-fw fa-twitter"></a>
-            <a class="fa fa-fw fa-linkedin"></a>
-            <a class="fa fa-fw fa-google-plus"></a>
-        '
+        'description' => 'here is the description',
+        'footer' => 'Here the footer'
     );
 
 
@@ -37,12 +30,13 @@ class Card extends Component
     {
         parent::__construct($template);
 
+
         $this->addGlobalCSS(file_get_contents(__DIR__ . '/asset/material-cards.css'));
-        $this->addGlobalCSS(file_get_contents(__DIR__ . '/asset/material-cards-auto-height.css'));
+        //$this->addGlobalCSS(file_get_contents(__DIR__ . '/asset/material-cards-auto-height.css'));
+
 
         $this->addGlobalJavascript(file_get_contents(__DIR__ . '/asset/material-card.js'));
-
-        $this->template = $this->includeTemplate(__DIR__ . '/asset/template.php');
+        //$this->template = $this->includeTemplate(__DIR__ . '/asset/template.php');
     }
 
 

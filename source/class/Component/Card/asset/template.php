@@ -1,20 +1,15 @@
-<div class="col-md-4 col-sm-6 col-xs-12">
-    <article class="material-card Red">
 
-        <?php echo '<'.$titleTag.'>';?>
-
-
-                <span>{{{title}}}</span>
-                <strong>
-                    <i class="fa fa-fw fa-star"></i>
-                    {{{subTitle}}}
-                </strong>
-        <?php echo '</'.$titleTag.'>';?>
-
-
+    <article class="material-card Pink"  style="height: {{{height}}}">
+        <<?php echo $titleTag;?>>
+            <span>{{{title}}}</span>
+            <strong>
+                <i class="fa fa-fw fa-star"></i>
+                {{{subTitle}}}
+            </strong>
+        </<?php echo $titleTag;?>>
         <div class="mc-content">
             <div class="img-container">
-                <img class="img-responsive" src="{{{image}}}">
+                <img class="" src="{{{image}}}">
             </div>
             <div class="mc-description">
                 {{{description}}}
@@ -23,8 +18,8 @@
         <a class="mc-btn-action">
             <i class="fa fa-bars"></i>
         </a>
-        <div class="mc-footer">
+        <div class="mc-footer" style="overflow: hidden; height: {{{footerHeight}}}">
             {{{footer}}}
         </div>
     </article>
-</div>
+
