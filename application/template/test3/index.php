@@ -85,7 +85,7 @@
 
 
 
-    <div class="">
+    <div class="" style="background-color:#FFF">
         <div class="section section-basic">
 
 
@@ -532,12 +532,9 @@
                 </div>
             </div>
 
-            <div class="col-md-12 text-center">
-                <a href="examples/signup-page.html" class="btn btn-simple btn-primary btn-lg" target="_blank">View
-                    Signup Page</a>
-            </div>
 
-            <div class="space-50"></div>
+
+
 
 
         </div>
