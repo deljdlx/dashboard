@@ -88,6 +88,9 @@ $test->registerComponent('db-richeditor', '\Elbiniou\Dashboard\Component\RichEdi
 
 
 
+$test->registerComponent('db-card', '\Elbiniou\Dashboard\Component\Card');
+
+
 //<a href="javascript:void(0)" class="btn btn-raised active"><code>.active</code></a>
 
 header('Content-type: text/html; charset=utf-8');
