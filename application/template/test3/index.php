@@ -81,6 +81,8 @@
 
 
 
+    <?php include(__DIR__.'/fragment/card/test.php'); ?>
+
 
 
 
@@ -90,32 +92,7 @@
 
 
 
-            <div class="row active-with-click">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <db-card title="Bill Murrey">
-                        <property name="subTitle">Lost in translation</property>
-                        <property name="footer">
-                            <a class="fa fa-fw fa-facebook"></a>
-                            <a class="fa fa-fw fa-twitter"></a>
-                            <a class="fa fa-fw fa-linkedin"></a>
-                            <a class="fa fa-fw fa-google-plus"></a>
-                        </property>
-                    </db-card>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <db-card></db-card>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <db-card></db-card>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <db-card></db-card>
-                </div>
-
-            </div>
+            <?php include(__DIR__.'/fragment/card/accordion.php'); ?>
 
 
 
@@ -129,12 +106,6 @@
 
 
 
-
-
-
-                <div class="title">
-                    <h2>Basic Elements</h2>
-                </div>
 
                 <div id="buttons">
                     <?php require(__DIR__ . '/fragment/button.php'); ?>
@@ -168,257 +139,30 @@
             </div>
             <!-- End Section Tabs -->
 
-            <div class="section section-pagination">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="title">
-                                <h3>Progress Bars</h3>
-                            </div>
-
-                            <div class="progress progress-line-primary">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 30%;">
-                                    <span class="sr-only">60% Complete</span>
-                                </div>
-                            </div>
-
-                            <div class="progress progress-line-info">
-                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60"
-                                     aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                                    <span class="sr-only">60% Complete</span>
-                                </div>
-                            </div>
-
-                            <div class="progress progress-line-danger">
-                                <div class="progress-bar progress-bar-success" style="width: 35%">
-                                    <span class="sr-only">35% Complete (success)</span>
-                                </div>
-                                <div class="progress-bar progress-bar-warning" style="width: 20%">
-                                    <span class="sr-only">20% Complete (warning)</span>
-                                </div>
-                                <div class="progress-bar progress-bar-danger" style="width: 10%">
-                                    <span class="sr-only">10% Complete (danger)</span>
-                                </div>
-                            </div>
-
-                            <br/>
-                            <div class="title">
-                                <h3>Navigation Pills</h3>
-                            </div>
-
-                            <ul class="nav nav-pills" role="tablist">
-                                <!--
-                                    color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
-                                -->
-                                <li>
-                                    <a href="#dashboard" role="tab" data-toggle="tab">
-                                        <i class="material-icons">dashboard</i>
-                                        Dashboard
-                                    </a>
-                                </li>
-                                <li class="active">
-                                    <a href="#schedule" role="tab" data-toggle="tab">
-                                        <i class="material-icons">schedule</i>
-                                        Schedule
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#tasks" role="tab" data-toggle="tab">
-                                        <i class="material-icons">list</i>
-                                        Tasks
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#payments" role="tab" data-toggle="tab">
-                                        <i class="material-icons">attach_money</i>
-                                        Payments
-                                    </a>
-                                </li>
-                            </ul>
-
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="title">
-                                <h3>Pagination</h3>
-                            </div>
-
-                            <ul class="pagination pagination-primary">
-                                <!--
-                                    color-classes: "pagination-primary", "pagination-info", "pagination-success", "pagination-warning", "pagination-danger"
-                                -->
-                                <li><a href="javascript:void(0);">1</a></li>
-                                <li><a href="javascript:void(0);">...</a></li>
-                                <li><a href="javascript:void(0);">5</a></li>
-                                <li><a href="javascript:void(0);">6</a></li>
-                                <li class="active"><a href="javascript:void(0);">7</a></li>
-                                <li><a href="javascript:void(0);">8</a></li>
-                                <li><a href="javascript:void(0);">9</a></li>
-                                <li><a href="javascript:void(0);">...</a></li>
-                                <li><a href="javascript:void(0);">12</a></li>
-                            </ul>
-
-                            <ul class="pagination pagination-info">
-                                <li><a href="javascript:void(0);">< prev</a></li>
-                                <li><a href="javascript:void(0);">1</a></li>
-                                <li><a href="javascript:void(0);">2</a></li>
-                                <li class="active"><a href="javascript:void(0);">3</a></li>
-                                <li><a href="javascript:void(0);">4</a></li>
-                                <li><a href="javascript:void(0);">5</a></li>
-                                <li><a href="javascript:void(0);">next ></a></li>
-                            </ul>
-
-                            <div class="title">
-                                <h3>Labels </h3>
-                            </div>
-                            <span class="label label-default">Default</span>
-                            <span class="label label-primary">Primary</span>
-                            <span class="label label-info">Info</span>
-                            <span class="label label-success">Success</span>
-                            <span class="label label-warning">Warning</span>
-                            <span class="label label-danger">Danger</span>
-                        </div>
-                    </div>
-
-                    <div class="space"></div>
 
 
-                </div>
-            </div>
+            <?php include(__DIR__.'/fragment/progressBar.php'); ?>
 
 
-            <div class="section">
-                <div class="container tim-container">
-                    <div class="title">
-                        <h2>Typography</h2>
-                    </div>
-                    <div id="typography">
-                        <div class="row">
-                            <div class="tim-typo">
-                                <h1><span class="tim-note">Header 1</span>The Life of Material Kit </h1>
-                            </div>
-                            <div class="tim-typo">
-                                <h2><span class="tim-note">Header 2</span>The Life of Material Kit</h2>
-                            </div>
-                            <div class="tim-typo">
-                                <h3><span class="tim-note">Header 3</span>The Life of Material Kit</h3>
-                            </div>
-                            <div class="tim-typo">
-                                <h4><span class="tim-note">Header 4</span>The Life of Material Kit</h4>
-                            </div>
-                            <div class="tim-typo">
-                                <h5><span class="tim-note">Header 5</span>The Life of Material Kit</h5>
-                            </div>
-                            <div class="tim-typo">
-                                <h6><span class="tim-note">Header 6</span>The Life of Material Kit</h6>
-                            </div>
-                            <div class="tim-typo">
-                                <p><span class="tim-note">Paragraph</span>
-                                    I will be the leader of a company that ends up being worth billions of dollars,
-                                    because I got the answers. I understand culture. I am the nucleus. I think that’s a
-                                    responsibility that I have, to push possibilities, to show people, this is the level
-                                    that things could be at.</p>
-                            </div>
-                            <div class="tim-typo">
-                                <span class="tim-note">Quote</span>
-                                <blockquote>
-                                    <p>
-                                        I will be the leader of a company that ends up being worth billions of dollars,
-                                        because I got the answers. I understand culture. I am the nucleus. I think
-                                        that’s a responsibility that I have, to push possibilities, to show people, this
-                                        is the level that things could be at.
-                                    </p>
-                                    <small>
-                                        Kanye West, Musician
-                                    </small>
-                                </blockquote>
-                            </div>
 
-                            <div class="tim-typo">
-                                <span class="tim-note">Muted Text</span>
-                                <p class="text-muted">
-                                    I will be the leader of a company that ends up being worth billions of dollars,
-                                    because I got the answers...
-                                </p>
-                            </div>
-                            <div class="tim-typo">
-                                <span class="tim-note">Primary Text</span>
-                                <p class="text-primary">
-                                    I will be the leader of a company that ends up being worth billions of dollars,
-                                    because I got the answers... </p>
-                            </div>
-                            <div class="tim-typo">
-                                <span class="tim-note">Info Text</span>
-                                <p class="text-info">
-                                    I will be the leader of a company that ends up being worth billions of dollars,
-                                    because I got the answers... </p>
-                            </div>
-                            <div class="tim-typo">
-                                <span class="tim-note">Success Text</span>
-                                <p class="text-success">
-                                    I will be the leader of a company that ends up being worth billions of dollars,
-                                    because I got the answers... </p>
-                            </div>
-                            <div class="tim-typo">
-                                <span class="tim-note">Warning Text</span>
-                                <p class="text-warning">
-                                    I will be the leader of a company that ends up being worth billions of dollars,
-                                    because I got the answers...
-                                </p>
-                            </div>
-                            <div class="tim-typo">
-                                <span class="tim-note">Danger Text</span>
-                                <p class="text-danger">
-                                    I will be the leader of a company that ends up being worth billions of dollars,
-                                    because I got the answers... </p>
-                            </div>
-                            <div class="tim-typo">
-                                <h2><span class="tim-note">Small Tag</span>
-                                    Header with small subtitle <br>
-                                    <small>Use "small" tag for the headers</small>
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="space-50"></div>
+            <?php include(__DIR__.'/fragment/pagination.php'); ?>
 
-                    <div id="images">
-                        <div class="title">
-                            <h2>Images</h2>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-sm-2">
-                                <h4>Rounded Image</h4>
-                                <img src="vendor/x_material_kit_free_v1.1.1/assets/img/avatar.jpg" alt="Rounded Image"
-                                     class="img-rounded img-responsive">
-                            </div>
-                            <div class="col-sm-2 col-sm-offset-1">
-                                <h4>Circle Image</h4>
-                                <img src="vendor/x_material_kit_free_v1.1.1/assets/img/avatar.jpg" alt="Circle Image"
-                                     class="img-circle img-responsive">
-                            </div>
-                            <div class="col-sm-2 col-sm-offset-1">
-                                <h4>Rounded Raised</h4>
-                                <img src="vendor/x_material_kit_free_v1.1.1/assets/img/avatar.jpg" alt="Raised Image"
-                                     class="img-rounded img-responsive img-raised">
-                            </div>
 
-                            <div class="col-sm-2 col-sm-offset-1">
-                                <h4>Circle Raised</h4>
-                                <img src="vendor/x_material_kit_free_v1.1.1/assets/img/avatar.jpg" alt="Thumbnail Image"
-                                     class="img-circle img-raised img-responsive">
-                            </div>
-                        </div>
-                        <div class="row">
+            <?php include(__DIR__.'/fragment/typographie.php');?>
+            <?php include(__DIR__.'/fragment/image.php');?>
 
-                        </div>
-                    </div>
+            <?php include(__DIR__.'/fragment/label.php');?>
 
-                </div>
-            </div>
+
+
+
+
+
+
+
+
+
 
             <div class="section" id="javascriptComponents">
                 <div class="container">

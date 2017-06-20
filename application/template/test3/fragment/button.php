@@ -9,12 +9,16 @@
 
 							<button class="btn btn-primary">Default</button>
 							<button class="btn btn-primary btn-round">Round</button>
-							<button class="btn btn-primary btn-round">
-								<i class="material-icons">favorite</i> With Icon
+
+
+
+
+                            <button class="btn btn-primary btn-round">
+								<!--<i class="material-icons">favorite</i> With Icon//-->
+                                <i class="fa fa-close"></i>With Icon
 							</button>
-							<button class="btn btn-primary btn-fab btn-fab-mini btn-round">
-								<i class="material-icons">favorite</i>
-							</button>
+
+
 							<button class="btn btn-primary btn-simple">Simple</button>
 
 
@@ -22,31 +26,10 @@
 
 						</div>
 					</div>
-					<div class="title">
-	                    <h3><small>Pick your size</small></h3>
-	                </div>
-	                <div class="row">
-	                    <div class="col-md-8 col-md-offset-2">
-	                        <button class="btn btn-primary btn-xs">x-Small</button>
-	                        <button class="btn btn-primary btn-sm">Small</button>
-	                        <button class="btn btn-primary">Regular</button>
-	                        <button class="btn btn-primary btn-lg">Large</button>
-	                    </div>
-	                </div>
 
-					<div class="title">
-	                    <h3><small> Pick your color </small></h3>
-	                </div>
-	                <div class="row">
-	                    <div class="col-md-8 col-md-offset-2">
-	                        <button class="btn">Default</button>
-	                        <button class="btn btn-primary">Primary</button>
-	                        <button class="btn btn-info">Info</button>
-	                        <button class="btn btn-success">Success</button>
-	                        <button class="btn btn-warning">Warning</button>
-	                        <button class="btn btn-danger">Danger</button>
-	                    </div>
-	                </div>
+
+
+
 	                <div class="title">
 	                    <h3>Links</h3>
 	                </div>
@@ -75,8 +58,13 @@
 
             <h3>Raised buttons <small><code>.btn-raised</code></small></h3>
             <p class="bs-component">
-                <db-button caption="default"></db-button>
+                <db-button caption="default" raised="true"></db-button>
 
+
+
+                <db-button class="primary" type="icon">
+                    <property name="caption"><i class="material-icons">done</i></property>
+                </db-button>
 
                 <db-button caption="Primary" class="primary"></db-button>
                 <db-button caption="Success" class="success"></db-button>
@@ -87,20 +75,29 @@
                     <property name="class">info</property>
                 </db-button>
 
-                <db-button>
-                    <property name="caption">warning</property>
-                    <property name="class">warning</property>
-                </db-button>
+                <db-button name="caption" class="warning"/>
+                <db-button name="danger" class="danger"/>
 
-                <db-button>
-                    <property name="caption">danger</property>
-                    <property name="class">danger</property>
-                </db-button>
+
 
                 <db-button>
                     <property name="caption">link</property>
                     <property name="class">link</property>
                 </db-button>
+            </p>
+
+            <p class="bs-component">
+                <db-button caption="success - xs - rounded -success" size="xs" type="rounded" class="success"></db-button>
+                <db-button caption="default - xs" size="xs"></db-button>
+                <db-button caption="Primary - s" class="primary" size="s"></db-button>
+                <db-button caption="Success - l" class="success" size="l"></db-button>
+
+                <db-button caption="Primary - s - rounded" class="primary" size="s" style="rounded"></db-button>
+
+
+                <db-button caption="danger - s - raised" class="danger" size="s" raised="true"></db-button>
+                <db-button caption="danger - s" class="danger" size="s"></db-button>
+
             </p>
 
 

@@ -90,6 +90,17 @@ $test->registerComponent('db-richeditor', '\Elbiniou\Dashboard\Component\RichEdi
 
 $test->registerComponent('db-card', '\Elbiniou\Dashboard\Component\Card');
 
+$test->registerComponent('db-card-3-footer', '\Elbiniou\Dashboard\Component\Card\ThreeFooter');
+
+
+
+
+$test->registerComponent('db-pagination', '\Elbiniou\Dashboard\Component\Pagination');
+
+$test->registerComponent('db-label', '\Elbiniou\Dashboard\Component\Label');
+
+
+
 
 //<a href="javascript:void(0)" class="btn btn-raised active"><code>.active</code></a>
 
