@@ -1,10 +1,10 @@
 <?php
 
-namespace Elbiniou\Dashboard\Component;
+namespace Elbiniou\Dashboard\Component\Card;
 
 use Elbiniou\Dashboard\Component;
 
-class Card extends Component
+class Accordion extends Component
 {
 
     protected static $globalCSS = array();

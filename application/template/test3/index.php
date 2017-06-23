@@ -10,6 +10,13 @@
 <body class="index-page">
 
 
+
+
+
+
+
+
+
 <!-- Navbar
 <nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
 	<div class="container">
@@ -81,9 +88,40 @@
 
 
 
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <db-card-flipping></db-card-flipping>
+        </div>
+        <div class="col-md-4">
+            <db-card-flipping header-image="http://lorempixel.com/850/280/nature/1/" image="http://lorempixel.com/300/300/city/1/"></db-card-flipping>
+        </div>
+        <div class="col-md-4">
+            <db-card-flipping header-image="http://lorempixel.com/850/280/nature/5/" image="http://lorempixel.com/300/300/city/2/"></db-card-flipping>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <db-card-rounded header-image="http://lorempixel.com/850/280/nature/3/" title="RoundedImage Card" subtitle="Description" footer="Here the footer"></db-card-rounded>
+        </div>
+        <div class="col-md-4">
+            <db-card-rounded header-image="http://lorempixel.com/850/280/nature/6"></db-card-rounded>
+        </div>
+        <div class="col-md-4">
+            <db-card-rounded></db-card-rounded>
+        </div>
+    </div>
+
+
+
     <?php include(__DIR__.'/fragment/card/test.php'); ?>
 
 
+
+    <?php include(__DIR__.'/fragment/card/accordion.php'); ?>
 
 
 
@@ -92,7 +130,7 @@
 
 
 
-            <?php include(__DIR__.'/fragment/card/accordion.php'); ?>
+
 
 
 

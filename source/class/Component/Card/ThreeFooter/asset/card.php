@@ -1,9 +1,9 @@
 <div class="db-card-01">
-    <div class="content">
+    <div class="content" style="height: {{{content-height}}}">
         <article>
 
             <h1>{{{title}}}</h1>
-            <h2>{{{subTitle}}}</h2>
+            <h2>{{{subtitle}}}</h2>
 
         </article>
 

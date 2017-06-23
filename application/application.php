@@ -88,9 +88,12 @@ $test->registerComponent('db-richeditor', '\Elbiniou\Dashboard\Component\RichEdi
 
 
 
-$test->registerComponent('db-card', '\Elbiniou\Dashboard\Component\Card');
+$test->registerComponent('db-card-accordion', '\Elbiniou\Dashboard\Component\Card\Accordion');
 
 $test->registerComponent('db-card-3-footer', '\Elbiniou\Dashboard\Component\Card\ThreeFooter');
+
+$test->registerComponent('db-card-rounded', '\Elbiniou\Dashboard\Component\Card\RoundedImage');
+$test->registerComponent('db-card-flipping', '\Elbiniou\Dashboard\Component\Card\Flipping');
 
 
 

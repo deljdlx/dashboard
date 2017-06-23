@@ -4,7 +4,7 @@ namespace Elbiniou\Dashboard\Component\Card;
 
 use Elbiniou\Dashboard\Component;
 
-class ThreeFooter extends Component
+class RoundedImage extends Component
 {
 
     protected static $globalCSS = array();
@@ -16,14 +16,11 @@ class ThreeFooter extends Component
 
     protected $variableCollection = array(
 
-
+        'header-image'=>'http://lorempixel.com/850/280/nature/4/',
         'title' => '$title',
         'subtitle'=>'$subTitle',
-        'image'=>'http://www.fillmurray.com/200/350',
-        'footer0' => 'footer0',
-        'footer1' => 'footer1',
-        'footer2' => 'footer2',
-        'content-height'=>'auto'
+        'image'=>'http://www.fillmurray.com/200/200',
+        'footer' => '$footer',
     );
 
 
